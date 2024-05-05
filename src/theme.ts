@@ -1,8 +1,8 @@
 const theme = {
-   name: "sevanevans.com",
+   name: "johnconover.xyz",
    rounding: 4,
    spacing: 24,
-   defaultMode: "light",
+   defaultMode: "dark",
    global: {
       colors: {
          brand: {
