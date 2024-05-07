@@ -15,14 +15,10 @@ import {
    NodeJS,
    React as ReactIcon,
    Express,
+   C,
+   BitBucket,
 } from "./TechnologySVGList";
 
-//new imports for john
-import{
-	C,
-	BitBucket,
-	
-}from "./TechnologySVGList";
 
 export const projects = [
    {
