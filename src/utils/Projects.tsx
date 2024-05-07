@@ -19,12 +19,12 @@ import {
 
 export const projects = [
    {
-      name: "Quick Draw",
-      url: "quickdrawdevelopment.com",
+      name: "Coapt",
+      url: "https://coaptengineering.com/",
       roles: [
-         { name: "Software Engineer", color: { color: "software-engineer", opacity: "strong" } },
+         { name: "Firmware Intern", color: { color: "Firmware-Intern", opacity: "strong" } },
       ],
-      period: "Jan 2024 - Present",
+      period: "August 2022 - May 2023",
       techStack: [
          { name: "Typescript", icon: <Typescript /> },
          { name: "CSS", icon: <CSS /> },
