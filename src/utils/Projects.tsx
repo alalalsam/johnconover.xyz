@@ -17,18 +17,24 @@ import {
    Express,
 } from "./TechnologySVGList";
 
+//new imports for john
+import{
+	C,
+	BitBucket,
+	
+}from "./TechnologySVGList";
+
 export const projects = [
    {
       name: "Coapt",
-      url: "https://coaptengineering.com/",
+      url: "coaptengineering.com",
       roles: [
-         { name: "Firmware Intern", color: { color: "Firmware-Intern", opacity: "strong" } },
+         { name: "Firmware Intern", color: { color: "firmware intern", opacity: "strong" } },
       ],
       period: "August 2022 - May 2023",
       techStack: [
-         { name: "Typescript", icon: <Typescript /> },
-         { name: "CSS", icon: <CSS /> },
-         { name: "React", icon: <ReactIcon /> },
+         { name: "C", icon: <C /> },
+         { name: "BitBucket", icon: <BitBucket /> },
       ],
       img: "https://firebasestorage.googleapis.com/v0/b/bodymx-80bc1.appspot.com/o/sevanportfolio%2F1631314671583.jpg?alt=media&token=afb5fa5f-2776-4a02-9053-61c2b79498aa",
       description: ``,
