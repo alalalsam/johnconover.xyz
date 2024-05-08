@@ -15,7 +15,6 @@ import {
    NodeJS,
    React as ReactIcon,
    Express,
-   BitBucket,
 } from "./TechnologySVGList";
 
 
@@ -28,7 +27,7 @@ export const projects = [
       ],
       period: "August 2022 - May 2023",
       techStack: [
-         { name: "BitBucket", icon: <BitBucket /> },
+      
       ],
       img: "https://firebasestorage.googleapis.com/v0/b/bodymx-80bc1.appspot.com/o/sevanportfolio%2F1631314671583.jpg?alt=media&token=afb5fa5f-2776-4a02-9053-61c2b79498aa",
       description: ``,
