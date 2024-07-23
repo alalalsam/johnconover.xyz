@@ -64,7 +64,7 @@ const App = () => {
    const [dancing, setDancing] = React.useState(false);
 
    return (
-      <Grommet full theme={theme} themeMode={dark ? "dark" : "light"}>
+      <Grommet full theme={theme} themeMode={dark ? "light" : "dark"}>
          <ToastProvider>
             {/* <AppContainer> */}
             <Header
