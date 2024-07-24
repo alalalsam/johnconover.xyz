@@ -83,6 +83,7 @@ const ProjectBox = ({ project, onClick }) => {
                   </Text>
                </Box>
                <Box align="center" justify="between" direction="row" gap="small">
+                  <Text truncate={true}>{project.url}</Text>
                   {project.roles &&
                      project.roles.map((role, index) => <RoleTag key={index} role={role} />)}
                </Box>
@@ -100,6 +101,12 @@ const ProjectBox = ({ project, onClick }) => {
                <Box align="center" justify="center" direction="row" gap="xsmall">
                   <Image width="20px" height="20px" src={project.img}></Image>
                   <Text>{project.name}</Text>
+               </Box>
+               <Box align="center" justify="between" direction="row" gap="small">
+                  <Text truncate={true}>{project.url}</Text>
+                  {project.roles &&
+                     project.roles.map((role, index) => <RoleTag key={index} role={role} />)}
+                  <Text truncate={true}>{project.period}</Text>
                </Box>
             </Box>
          )}
@@ -176,6 +183,15 @@ const SelectLayer = ({ project, setSelectedProject }) => {
                         <Link />
                         <Text>Link</Text>
                      </Box>
+                     <Box align="center" justify="center" wrap>
+                        <Anchor
+                           onClick={() => {
+                              window.open("https://www." + project.url);
+                           }}
+                        >
+                           {project.url}
+                        </Anchor>
+                     </Box>
                   </Box>
                   <Box
                      align="start"
@@ -204,6 +220,44 @@ const SelectLayer = ({ project, setSelectedProject }) => {
                         <Text>Tech Stack</Text>
                      </Box>
 
+                     <Grid columns={{ count: 3, size: "auto" }} gap="xsmall">
+                        {project.techStack.map((item, i) => (
+                           <Box
+                              onMouseOver={(e) => handleMouseOver(e, item)}
+                              onMouseOut={handleMouseOut}
+                           >
+                              <TechIcon key={i} isGolden={false} isFiltered={false}>
+                                 {item.icon}
+                              </TechIcon>
+                           </Box>
+                        ))}
+                        {showDrop && hoveredIcon && (
+                           <Drop
+                              align={{ bottom: "top" }}
+                              target={hoverRef}
+                              plain
+                              overflow="hidden"
+                           >
+                              <Box
+                                 pad="xsmall"
+                                 background="dark-3"
+                                 round={{ size: "xsmall" }}
+                                 margin="xsmall"
+                                 style={{
+                                    background: "rgba(139, 139, 139, 0.95)",
+                                    backdropFilter: "blur(5.5px)",
+                                    WebkitBackdropFilter: "blur(8.5px)",
+                                    border: "1px solid rgba(255, 255, 255, 0.18)",
+                                 }}
+                              >
+                                 <Box direction="column" align="center">
+                                    <Text weight="bold">{hoveredIcon.name}</Text>
+                                    {hoveredIcon.isGolden && <Text>Skilled</Text>}
+                                 </Box>
+                              </Box>
+                           </Drop>
+                        )}
+                     </Grid>
                   </Box>
                   <Box
                      align="start"
