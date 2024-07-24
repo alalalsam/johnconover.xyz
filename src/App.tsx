@@ -119,7 +119,7 @@ const App = () => {
                               src="https://firebasestorage.googleapis.com/v0/b/bodymx-80bc1.appspot.com/o/profilePictures%2FW0xdrFJk8BPiLv93iwv5n7sZleH2?alt=media&token=fd5d2a17-462f-4350-ba6c-6fa10c3b47e9"
                            />
                            <Box align="start" justify="start" fill>
-                              <Heading margin="none">sevan</Heading>
+                              <Heading margin="none">John</Heading>
                               <Heading
                                  margin={{
                                     left: "medium",
@@ -128,7 +128,7 @@ const App = () => {
                                     bottom: "none",
                                  }}
                               >
-                                 evans
+                                 Conover
                               </Heading>
                            </Box>
                         </Box>
@@ -198,6 +198,14 @@ const App = () => {
                      border={{ color: "active-background", side: "top", size: "small" }}
                      gap="medium"
                   >
+				  
+				  <Heading level={mobileHeadingLevel} size="medium">
+                     Experience
+                  </Heading>
+                  <ProjectsTable />
+                  <TechnologyStack />
+				  
+				  
                      <Box align="start" justify="center" fill="horizontal">
                         <Heading
                            level={mobileHeadingLevel}
@@ -225,11 +233,6 @@ const App = () => {
                         </Paragraph>
                      </Box>
                   </Box>
-                  <Heading level={mobileHeadingLevel} size="medium">
-                     Experience
-                  </Heading>
-                  <ProjectsTable />
-                  <TechnologyStack />
 
                   <Box
                      align="center"
@@ -252,8 +255,7 @@ const App = () => {
                            fill
                            color="text-paragraph"
                         >
-                           Give me a shout, and we can make something cool happen. I'm usually quick
-                           to respond.
+                           i'm screaming i'm creaming eating carpet my wife is leaving
                         </Paragraph>
                      </Box>
                      <ContactGrid setContactSevan={setContactSevan} />
