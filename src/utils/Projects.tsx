@@ -21,9 +21,7 @@ import {
 export const projects = [
    {
       name: "Coapt: Myo Pattern Recognition",
-      roles: [
-         { name: "Firmware Intern", color: { color: "firmware-intern", opacity: "strong" } },
-      ],
+      roles: [{ name: "Firmware Intern", color: { color: "firmware-intern", opacity: "strong" } }],
       period: "August 2022 - May 2023",
       img: "https://media.licdn.com/dms/image/C4D0BAQGpl0eFXCA9bQ/company-logo_200_200/0/1630525128114/coapt_logo?e=2147483647&v=beta&t=a_n3bdXuvVfmuJyF0R67UPsod9Omocb0AYLTFCXhe0I",
       description: `Spearheaded research, schematic revision, hardware testing, and firmware development for a prototype low-power PCB module. 

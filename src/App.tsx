@@ -196,7 +196,7 @@ const App = () => {
                      justify="center"
                      margin={{ top: "small" }}
                      border={{ color: "active-background", side: "top", size: "small" }}
-                     gap="medium"
+                     gap="small"
                   >
 				  
                      <Box align="start" justify="center" fill="horizontal">
