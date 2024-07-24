@@ -27,7 +27,7 @@ export const projects = [
       ],
       period: "August 2022 - May 2023",
       techStack: [
-		{name: "Git", icon: <git /> }
+		{ name: "Git", icon: <Git /> }
       ],
       img: "https://media.licdn.com/dms/image/C4D0BAQGpl0eFXCA9bQ/company-logo_200_200/0/1630525128114/coapt_logo?e=2147483647&v=beta&t=a_n3bdXuvVfmuJyF0R67UPsod9Omocb0AYLTFCXhe0I",
       description: ``,
