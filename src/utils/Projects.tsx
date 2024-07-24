@@ -30,14 +30,17 @@ export const projects = [
 		{ name: "Git", icon: <Git /> }
       ],
       img: "https://media.licdn.com/dms/image/C4D0BAQGpl0eFXCA9bQ/company-logo_200_200/0/1630525128114/coapt_logo?e=2147483647&v=beta&t=a_n3bdXuvVfmuJyF0R67UPsod9Omocb0AYLTFCXhe0I",
-      description: ``,
+      description: `Spearheaded research, schematic revision, hardware testing, and firmware development for a prototype low-power PCB module. 
+					Successfully decreased system power draw by 2 orders of magnitude.`,
    },
+   
    {
-      name: "BodyMX",
-      url: "thebodymx.com",
-      roles: [{ name: "Co-Founder", color: { color: "co-founder", opacity: "strong" } }],
-      period: "Sept 2022 - Present",
+      name: "Robotics Team 4206",
+      url: " ",
+      roles: [{ name: "Control Systems Lead", color: { color: "firmware-intern", opacity: "strong" } }],
+      period: "August 2017 - May 2020",
       techStack: [
+	  /*
          { name: "Typescript", icon: <Typescript /> },
          { name: "Javascript", icon: <Javascript /> },
          { name: "CSS", icon: <CSS /> },
@@ -48,12 +51,14 @@ export const projects = [
          { name: "Heroku", icon: <Heroku /> },
          { name: "React", icon: <ReactIcon /> },
          { name: "Express", icon: <Express /> },
-      ],
-      img: "https://firebasestorage.googleapis.com/v0/b/bodymx-80bc1.appspot.com/o/sevanportfolio%2Fimageedit_6_6528806410.png?alt=media&token=d171f856-e3e4-4af4-aa12-27c83b674d86",
-      description: `As the Co-founder and Software Engineer of BodyMX, I've been creating a comprehensive digital platform that seamlessly connects fitness enthusiasts with trainers and wellness resources. Through innovation and determination, I've guided our team in designing an intuitive, responsive, and effective suite of fitness tools that benefit both users and professionals in the industry.
-      
-      In the creation of our website and mobile application, I leveraged a robust tech stack including React and TypeScript, alongside other cutting-edge technologies. React's reusable components and virtual DOM helped us craft a highly interactive user interface that not only runs smoothly but also makes for a delightful user experience. TypeScript, with its static typing, empowered us with better maintainability and debugging capabilities, resulting in safer and more reliable software.`,
+      */
+	  ],
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKNkpE8pObatdfZLX_6LVdXNvnOWPD5oOcRg&s",
+      description: `Conducted design and full assembly of electronic control systems with integrated pneumatics. 
+					Achieved single-day turnaround on system assembly and wire harness.`,
    },
+   
+   /*
    {
       name: "Tigase, Inc",
       url: "tigase.net",
@@ -130,4 +135,6 @@ export const projects = [
       img: "https://firebasestorage.googleapis.com/v0/b/bodymx-80bc1.appspot.com/o/sevanportfolio%2Fdownload%20(4).jpg?alt=media&token=61834de7-4e3f-4ca7-b538-114a612edc8c",
       description: ``,
    },
+	*/
+
 ];

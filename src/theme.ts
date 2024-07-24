@@ -54,6 +54,7 @@ const theme = {
             light: "#CCCCCC",
          },
          "co-founder": "#8D3B72",
+		 "firmware-intern": "#8D3B72",
          collaborator: "#8A7090",
          "1st-place": "#8C5681",
          "software-engineer": "#8D497A",
