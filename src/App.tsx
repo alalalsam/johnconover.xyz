@@ -75,24 +75,27 @@ const App = () => {
                gap="medium"
                pad="xsmall"
                sticky="scrollup"
-               style={ dark
-                     ? {
-                          backdropFilter: "blur(5.5px)",
-                          WebkitBackdropFilter: "blur(8.5px)",
-                       }
+               style={ 
+					dark
+					 ? {
+							  backdropFilter: "blur(5.5px)",
+							  WebkitBackdropFilter: "blur(8.5px)",
+						}
                      : {
                           //background: "rgba(255, 255, 255, 0.3)",
                           backdropFilter: "blur(5.5px)",
                           WebkitBackdropFilter: "blur(8.5px)",
                           //border: "1px solid rgba(255, 255, 255, 0.18)",
                        }
+					   
+				}
 
   
             >
                <Heading color="collaborator" margin={{ left: "small", top: "none" }} size="small">
                   John Conover's cool project website 
                </Heading>
-               <DarkThemeSwitch dark={dark} setDark={setDark} />
+			   <DarkThemeSwitch dark={dark} setDark={setDark} />
             </Header>
 
             <Page kind="narrow">
