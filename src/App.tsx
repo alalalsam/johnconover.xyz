@@ -76,21 +76,14 @@ const App = () => {
                pad="xsmall"
                sticky="scrollup"
                style={
-                  dark
-                     ? {
-                          backdropFilter: "blur(5.5px)",
-                          WebkitBackdropFilter: "blur(8.5px)",
-                       }
-                     : {
-                          background: "rgba(255, 255, 255, 0.3)",
-                          backdropFilter: "blur(5.5px)",
-                          WebkitBackdropFilter: "blur(8.5px)",
-                          border: "1px solid rgba(255, 255, 255, 0.18)",
-                       }
-               }
+                   backdropFilter: "blur(5.5px)",
+                   WebkitBackdropFilter: "blur(8.5px)",
+                }
+
+  
             >
                <Heading color="collaborator" margin={{ left: "small", top: "none" }} size="small">
-                  s<EvansSpan>evans</EvansSpan>
+                  John Conover's cool project website 
                </Heading>
                <DarkThemeSwitch dark={dark} setDark={setDark} />
             </Header>
@@ -135,11 +128,10 @@ const App = () => {
                               margin={{ vertical: "xsmall" }}
                               color="text-paragraph"
                            >
-                              Whats up, I'm a{" "}
-                              <StyledSpan>self-taught software developer</StyledSpan> &{" "}
-                              <StyledSpan>co-founder of BodyMX</StyledSpan>. I enjoy{" "}
-                              <StyledSpan>long walks on the beach</StyledSpan> and{" "}
-                              <StyledSpan>dancing Tango!</StyledSpan>
+                              I'm John Conover, a computer{" "}
+                              engineering graduate from Loyola Chicago. &{" "}
+                              Here are some of the projects I've been {" "}
+                              working on in my free time.{" "}
                            </Paragraph>
                            <Box
                               align="end"
@@ -159,7 +151,7 @@ const App = () => {
                               <Paragraph color="text-paragraph" margin="none">
                                  I'm in{" "}
                                  <Text weight="bold">
-                                    <StyledSpan>Palm Springs, California!</StyledSpan>
+                                    <StyledSpan>DFW, Texas</StyledSpan>
                                  </Text>{" "}
                                  <Text size="small">USA</Text>
                               </Paragraph>
@@ -200,9 +192,9 @@ const App = () => {
                         <Heading
                            level={mobileHeadingLevel}
                            margin={{ vertical: "small" }}
-                           size="medium"
+                           size="large"
                         >
-                           Work
+                           Projects
                         </Heading>
 
                         <Paragraph
@@ -211,17 +203,15 @@ const App = () => {
                            fill
                            color="text-paragraph"
                         >
-                           With a love for <StyledSpan>coding</StyledSpan> rivaled only by my love
-                           for
-                           <StyledSpan> coffee</StyledSpan>, I've spent a{" "}
-                           <StyledSpan>decade</StyledSpan> turning caffeine and code into innovative{" "}
-                           <StyledSpan>software solutions</StyledSpan>. I take pride in{" "}
-                           <StyledSpan>crafting user experiences</StyledSpan> that simplify
-                           complexity, foster engagement, and{" "}
-                           <StyledSpan>enhance overall usability</StyledSpan>. Striking a balance
-                           between aesthetics, functionality, and user-centric principles, my work
-                           symbolizes the essence of{" "}
-                           <StyledSpan>impactful digital design</StyledSpan>.
+                           im insane! I'm deranged! don't let me near you! I will 
+                           kill you!{" "}
+                           Im mixed race chinese/white, can I say slurs for both or neither?{" "}
+                           If I rubbed a magic lamp and a genie popped out, I would have a few{" "}
+                           wishes. One of these wishes would be that league of legends would 
+						   never have {" "}
+                           been created. The next wish would be for all food to taste really good. My last
+						   and final wish would be big muscles. oh wait, I already{" "}
+                           have big muscles. 
                         </Paragraph>
                      </Box>
                   </Box>
