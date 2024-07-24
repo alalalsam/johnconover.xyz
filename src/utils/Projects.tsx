@@ -21,14 +21,10 @@ import {
 export const projects = [
    {
       name: "Coapt: Myo Pattern Recognition",
-      url: " ",
       roles: [
          { name: "Firmware Intern", color: { color: "firmware-intern", opacity: "strong" } },
       ],
       period: "August 2022 - May 2023",
-      techStack: [
-		{ name: "Git", icon: <Git /> }
-      ],
       img: "https://media.licdn.com/dms/image/C4D0BAQGpl0eFXCA9bQ/company-logo_200_200/0/1630525128114/coapt_logo?e=2147483647&v=beta&t=a_n3bdXuvVfmuJyF0R67UPsod9Omocb0AYLTFCXhe0I",
       description: `Spearheaded research, schematic revision, hardware testing, and firmware development for a prototype low-power PCB module. 
 					Successfully decreased system power draw by 2 orders of magnitude.`,
@@ -36,23 +32,8 @@ export const projects = [
    
    {
       name: "Robotics Team 4206",
-      url: " ",
       roles: [{ name: "Control Systems Lead", color: { color: "firmware-intern", opacity: "strong" } }],
       period: "August 2017 - May 2020",
-      techStack: [
-	  /*
-         { name: "Typescript", icon: <Typescript /> },
-         { name: "Javascript", icon: <Javascript /> },
-         { name: "CSS", icon: <CSS /> },
-         { name: "Firebase", icon: <Firebase /> },
-         { name: "Grommet", icon: <Grommet /> },
-         { name: "MongoDB", icon: <MongoDB /> },
-         { name: "NodeJS", icon: <NodeJS /> },
-         { name: "Heroku", icon: <Heroku /> },
-         { name: "React", icon: <ReactIcon /> },
-         { name: "Express", icon: <Express /> },
-      */
-	  ],
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKNkpE8pObatdfZLX_6LVdXNvnOWPD5oOcRg&s",
       description: `Conducted design and full assembly of electronic control systems with integrated pneumatics. 
 					Achieved single-day turnaround on system assembly and wire harness.`,
