@@ -171,7 +171,7 @@ const SelectLayer = ({ project, setSelectedProject }) => {
                            project.roles.map((role, index) => <RoleTag key={index} role={role} />)}
                      </Box>
                   </Box>
-
+/*
                   <Box
                      align="start"
                      justify="between"
@@ -193,7 +193,9 @@ const SelectLayer = ({ project, setSelectedProject }) => {
                         </Anchor>
                      </Box>
                   </Box>
-                  <Box
+                  */
+				  
+				  <Box
                      align="start"
                      justify="between"
                      fill="horizontal"
@@ -208,6 +210,8 @@ const SelectLayer = ({ project, setSelectedProject }) => {
                         <Text>{project.period}</Text>
                      </Box>
                   </Box>
+				  
+				  /*
                   <Box
                      align="start"
                      justify="between"
@@ -259,13 +263,15 @@ const SelectLayer = ({ project, setSelectedProject }) => {
                         )}
                      </Grid>
                   </Box>
-                  <Box
+                  */
+				  
+				  <Box
                      align="start"
                      justify="between"
                      fill="horizontal"
                      direction="column"
                      pad="small"
-                     gap="large"
+                     gap="small"
                   >
                      <Box align="start" justify="start" direction="row" gap="small">
                         <Menu />
