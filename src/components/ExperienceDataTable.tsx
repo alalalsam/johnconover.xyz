@@ -155,7 +155,8 @@ const SelectLayer = ({ project, setSelectedProject }) => {
             </Box>
             <Box align="start" justify="between" gap="medium" overflow="auto" flex="grow">
                <Box align="start" justify="start" gap="medium" fill="horizontal" pad="medium">
-                  <Box
+                  
+				  <Box
                      align="start"
                      justify="between"
                      fill="horizontal"
@@ -164,36 +165,15 @@ const SelectLayer = ({ project, setSelectedProject }) => {
                   >
                      <Box align="start" justify="start" direction="row" gap="small">
                         <List />
-                        <Text>Tags</Text>
+                        <Text>Role</Text>
                      </Box>
                      <Box direction="row" gap="xsmall">
                         {project.roles &&
                            project.roles.map((role, index) => <RoleTag key={index} role={role} />)}
                      </Box>
                   </Box>
-/*
-                  <Box
-                     align="start"
-                     justify="between"
-                     fill="horizontal"
-                     direction="row"
-                     pad="small"
-                  >
-                     <Box align="start" justify="start" direction="row" gap="small">
-                        <Link />
-                        <Text>Link</Text>
-                     </Box>
-                     <Box align="center" justify="center" wrap>
-                        <Anchor
-                           onClick={() => {
-                              window.open("https://www." + project.url);
-                           }}
-                        >
-                           {project.url}
-                        </Anchor>
-                     </Box>
-                  </Box>
-                  */
+
+
 				  
 				  <Box
                      align="start"
@@ -211,59 +191,7 @@ const SelectLayer = ({ project, setSelectedProject }) => {
                      </Box>
                   </Box>
 				  
-				  /*
-                  <Box
-                     align="start"
-                     justify="between"
-                     fill="horizontal"
-                     direction="row"
-                     pad="small"
-                  >
-                     <Box align="start" justify="start" direction="row" gap="small">
-                        <Technology />
-                        <Text>Tech Stack</Text>
-                     </Box>
-
-                     <Grid columns={{ count: 3, size: "auto" }} gap="xsmall">
-                        {project.techStack.map((item, i) => (
-                           <Box
-                              onMouseOver={(e) => handleMouseOver(e, item)}
-                              onMouseOut={handleMouseOut}
-                           >
-                              <TechIcon key={i} isGolden={false} isFiltered={false}>
-                                 {item.icon}
-                              </TechIcon>
-                           </Box>
-                        ))}
-                        {showDrop && hoveredIcon && (
-                           <Drop
-                              align={{ bottom: "top" }}
-                              target={hoverRef}
-                              plain
-                              overflow="hidden"
-                           >
-                              <Box
-                                 pad="xsmall"
-                                 background="dark-3"
-                                 round={{ size: "xsmall" }}
-                                 margin="xsmall"
-                                 style={{
-                                    background: "rgba(139, 139, 139, 0.95)",
-                                    backdropFilter: "blur(5.5px)",
-                                    WebkitBackdropFilter: "blur(8.5px)",
-                                    border: "1px solid rgba(255, 255, 255, 0.18)",
-                                 }}
-                              >
-                                 <Box direction="column" align="center">
-                                    <Text weight="bold">{hoveredIcon.name}</Text>
-                                    {hoveredIcon.isGolden && <Text>Skilled</Text>}
-                                 </Box>
-                              </Box>
-                           </Drop>
-                        )}
-                     </Grid>
-                  </Box>
-                  */
+				  
 				  
 				  <Box
                      align="start"
