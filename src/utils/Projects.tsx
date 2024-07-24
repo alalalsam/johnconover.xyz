@@ -20,16 +20,16 @@ import {
 
 export const projects = [
    {
-      name: "Coapt",
-      url: "coaptengineering.com",
+      name: "Coapt: Myo Pattern Recognition",
+      url: " ",
       roles: [
-         { name: "Firmware Intern", color: { color: "firmware intern", opacity: "strong" } },
+         { name: "Firmware Intern", color: { color: "firmware-intern", opacity: "strong" } },
       ],
       period: "August 2022 - May 2023",
       techStack: [
-      
+		{name: "Git", icon: <git /> }
       ],
-      img: "https://firebasestorage.googleapis.com/v0/b/bodymx-80bc1.appspot.com/o/sevanportfolio%2F1631314671583.jpg?alt=media&token=afb5fa5f-2776-4a02-9053-61c2b79498aa",
+      img: "https://media.licdn.com/dms/image/C4D0BAQGpl0eFXCA9bQ/company-logo_200_200/0/1630525128114/coapt_logo?e=2147483647&v=beta&t=a_n3bdXuvVfmuJyF0R67UPsod9Omocb0AYLTFCXhe0I",
       description: ``,
    },
    {

@@ -199,15 +199,14 @@ const App = () => {
                      gap="medium"
                   >
 				  
-				  <Heading level={mobileHeadingLevel} size="medium">
-                     Experience
-                  </Heading>
-                  <ProjectsTable />
-                  <TechnologyStack />
-				  
-				  
                      <Box align="start" justify="center" fill="horizontal">
-                        <Heading
+                        <Heading level={mobileHeadingLevel} size="medium">
+							Experience
+						</Heading>
+						<ProjectsTable />
+						<TechnologyStack />
+						
+						<Heading
                            level={mobileHeadingLevel}
                            margin={{ vertical: "small" }}
                            size="large"
