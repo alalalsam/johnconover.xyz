@@ -134,10 +134,7 @@ const App = () => {
 							<ContactGrid setContactSevan={setContactSevan} />
 						</Box>
 						
-                     </Box>
-             
-                  </Box>
-                        <Box align="start" justify="between" fill="horizontal" wrap direction="column" gap="small">
+						 <Box align="start" justify="between" fill="horizontal" wrap direction="column" gap="small">
                            <Paragraph
                               size="large"
                               margin={{ vertical: "xsmall" }}
@@ -149,6 +146,10 @@ const App = () => {
 							  executive boards of Febreeze and other scented candlemaking companies used their competition to mask the courting of Jasmine, who at this point in litigation has come out as lesbian.
                            </Paragraph>
                         </Box>
+						
+                     </Box>
+             
+                  </Box>
 				  
                   <Box
                      align="center"
