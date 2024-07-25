@@ -142,7 +142,7 @@ const App = () => {
                               color="text-paragraph"
                            >
                               I'm John Conover, a computer{" "}
-                              engineering graduate from Loyola Chicago. &{" "}
+                              engineering graduate from Loyola Chicago. {" "}
                               Here are some of the projects I've worked on in the past {" "}
                            </Paragraph>
                         </Box>
