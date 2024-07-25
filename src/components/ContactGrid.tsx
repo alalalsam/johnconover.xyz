@@ -15,7 +15,7 @@ function ContactGrid({ setContactSevan }) {
       });
    };
    return (
-      <Grid fill="horizontal" gap="small" columns="370px">
+      <Grid fill="horizontal" gap="small" columns="195px">
          <Box
             align="center"
             justify="between"
@@ -27,7 +27,7 @@ function ContactGrid({ setContactSevan }) {
             gap="small"
             round="xsmall"
             onClick={() => {
-               window.open("https://www.linkedin.com/in/sevanevans", "_blank");
+               window.open("https://www.linkedin.com/in/john-conover-628567258/", "_blank");
                handleToastNotif("normal", "Redirecting...", "Taking you to Linkedin!", 5000, [
                   {
                      onClick: () => {},
@@ -39,7 +39,7 @@ function ContactGrid({ setContactSevan }) {
             <Box align="center" justify="center" direction="row" gap="small">
                <Linkedin />
                <Text weight="normal" size="large">
-                  Sevan Evans
+                  John Conover
                </Text>
             </Box>
          </Box>
@@ -85,7 +85,7 @@ function ContactGrid({ setContactSevan }) {
             <Box align="center" justify="center" direction="row" gap="small">
                <Github />
                <Text weight="normal" size="large">
-                  @plaidroni
+                  @alalalsam
                </Text>
             </Box>
          </Box>

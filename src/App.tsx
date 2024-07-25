@@ -200,11 +200,11 @@ const App = () => {
                   >
 				  
                      <Box align="start" justify="center" fill="horizontal">
-                        <Heading level={mobileHeadingLevel} size="medium">
+                        <Heading level={mobileHeadingLevel} size="medium" gap="small">
 							Experience
 						</Heading>
+						
 						<ProjectsTable />
-						<TechnologyStack />
 						
 						<Heading
                            level={mobileHeadingLevel}
