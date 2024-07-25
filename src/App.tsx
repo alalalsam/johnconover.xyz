@@ -148,11 +148,7 @@ const App = () => {
                         </Box>
 						
                      </Box>
-                     {!isMobile && (
-                        <Box align="center" justify="center" flex fill="horizontal">
-                           <Anchor label="let's talk" onClick={() => setContactSevan(true)} />
-                        </Box>
-                     )}
+             
                   </Box>
                   <Box
                      align="center"
