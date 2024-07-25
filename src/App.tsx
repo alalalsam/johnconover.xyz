@@ -98,7 +98,7 @@ const App = () => {
 			   <DarkThemeSwitch dark={dark} setDark={setDark} />
             </Header>
 
-            <Page kind="full">
+            <Page kind="narrow">
                <PageContent pad={mobilePad} flex="grow">
                   <Box align="baseline" justify="between" direction="row">
                      <Box align="start" justify="center" gap="medium" wrap>
