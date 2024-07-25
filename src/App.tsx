@@ -116,7 +116,7 @@ const App = () => {
                               overflow="hidden"
                               round="full"
                               size="2xl"
-                              src="https://firebasestorage.googleapis.com/v0/b/bodymx-80bc1.appspot.com/o/profilePictures%2FW0xdrFJk8BPiLv93iwv5n7sZleH2?alt=media&token=fd5d2a17-462f-4350-ba6c-6fa10c3b47e9"
+                              src="https://cdn.britannica.com/68/178268-050-5B4E7FB6/Tom-Cruise-2013.jpg"
                            />
                            <Box align="start" justify="start" fill>
                               <Heading margin="none">John</Heading>
