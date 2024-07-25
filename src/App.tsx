@@ -103,14 +103,14 @@ const App = () => {
                   <Box align="baseline" justify="between" direction="row">
                      <Box align="start" justify="center" gap="medium" wrap>
                         <Box
-                           align="center"
+                           align="left"
                            justify="center"
                            direction="row"
                            gap="medium"
-                           pad={{ horizontal: "large" }}
+                           pad={{ horizontal: "small" }}
                         >
                            <Avatar
-                              align="left"
+                              align="center"
                               flex={false}
                               justify="center"
                               overflow="hidden"
@@ -133,6 +133,8 @@ const App = () => {
                            </Box>
 							<ContactGrid setContactSevan={setContactSevan} />
 						</Box>
+						
+						
                         <Box align="start" justify="between" wrap direction="column" gap="small">
                            <Paragraph
                               size="large"

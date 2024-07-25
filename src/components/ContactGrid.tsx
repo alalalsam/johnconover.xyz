@@ -43,25 +43,7 @@ function ContactGrid({ setContactSevan }) {
                </Text>
             </Box>
          </Box>
-         <Box
-            align="center"
-            justify="between"
-            width={{ min: "350px", max: "fill" }}
-            height="xxsmall"
-            background={{ color: "neutral-4", opacity: "strong" }}
-            pad="small"
-            direction="row"
-            gap="small"
-            round="xsmall"
-            onClick={() => setContactSevan(true)}
-         >
-            <Box align="center" justify="center" direction="row" gap="small">
-               <Mail />
-               <Text weight="normal" size="large">
-                  sevan@thebodymx.com
-               </Text>
-            </Box>
-         </Box>
+         
          <Box
             align="center"
             justify="between"
