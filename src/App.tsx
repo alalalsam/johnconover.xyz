@@ -138,7 +138,7 @@ const App = () => {
                         <Box align="start" justify="between" wrap direction="column" gap="small">
                            <Paragraph
                               size="large"
-                              margin={{ vertical: "xsmall" horizontal: "large" }}
+                              margin={{ vertical: "xsmall", horizontal: "large" }}
                               color="text-paragraph"
                            >
                               The Febreeze air freshener company and the scented candle industry are rife with strife and drama this saturday afternoon. after months of litigation and "political donations" intended 
