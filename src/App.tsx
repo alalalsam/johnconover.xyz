@@ -98,7 +98,7 @@ const App = () => {
 			   <DarkThemeSwitch dark={dark} setDark={setDark} />
             </Header>
 
-            <Page kind="narrow">
+            <Page kind="wide">
                <PageContent pad={mobilePad} flex="grow">
                   <Box align="baseline" justify="between" direction="row">
                      <Box align="start" justify="center" gap="medium" wrap>
@@ -143,29 +143,7 @@ const App = () => {
                               Here are some of the projects I've been {" "}
                               working on in my free time.{" "}
                            </Paragraph>
-                           <Box
-                              align="end"
-                              justify="center"
-                              direction="row"
-                              gap="xsmall"
-                              margin={{ right: "none" }}
-                              onClick={() => setLocationDrop(true)}
-                              ref={boxRef}
-                              focusIndicator={false}
-                              hoverIndicator
-                              pad="xsmall"
-                              round="xsmall"
-                              border
-                           >
-                              <Location />
-                              <Paragraph color="text-paragraph" margin="none">
-                                 I'm in{" "}
-                                 <Text weight="bold">
-                                    <StyledSpan>DFW, Texas</StyledSpan>
-                                 </Text>{" "}
-                                 <Text size="small">USA</Text>
-                              </Paragraph>
-                           </Box>
+                           
                         </Box>
                         {isMobile && (
                            <Box
@@ -200,7 +178,7 @@ const App = () => {
                   >
 				  
                      <Box align="start" justify="center" fill="horizontal">
-                        <Heading level={mobileHeadingLevel} size="medium" >
+                        <Heading level={mobileHeadingLevel} size="large" >
 							Experience
 						</Heading>
 						
