@@ -134,10 +134,13 @@ const App = () => {
 							<ContactGrid setContactSevan={setContactSevan} />
 						</Box>
 						
-						 <Box align="start" justify="between" fill="horizontal" wrap direction="column" gap="small">
+                     </Box>
+             
+                  </Box>
+                        <Box align="start" justify="between" wrap direction="column" gap="small">
                            <Paragraph
                               size="large"
-                              margin={{ vertical: "xsmall" }}
+                              margin={{ vertical: "large" }}
                               color="text-paragraph"
                            >
                               The Febreeze air freshener company and the scented candle industry are rife with strife and drama this saturday afternoon. after months of litigation and "political donations" intended 
@@ -146,10 +149,6 @@ const App = () => {
 							  executive boards of Febreeze and other scented candlemaking companies used their competition to mask the courting of Jasmine, who at this point in litigation has come out as lesbian.
                            </Paragraph>
                         </Box>
-						
-                     </Box>
-             
-                  </Box>
 				  
                   <Box
                      align="center"
