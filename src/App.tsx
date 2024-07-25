@@ -137,7 +137,7 @@ const App = () => {
                      </Box>
              
                   </Box>
-                        <Box align="start" justify="between" wrap direction="column" gap="small">
+                        <Box align="start" alignContent="end" justify="between" wrap direction="column" gap="small">
                            <Paragraph
                               size="large"
                               margin={{ vertical: "xsmall" }}
