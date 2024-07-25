@@ -15,7 +15,7 @@ function ContactGrid({ setContactSevan }) {
       });
    };
    return (
-      <Grid fill="horizontal" gap="small" columns="195px">
+      <Grid fill="vertical" gap="small" columns="195px">
          <Box
             align="center"
             justify="between"
@@ -73,7 +73,7 @@ function ContactGrid({ setContactSevan }) {
             gap="small"
             round="xsmall"
             onClick={() => {
-               window.open("https://www.github.com/plaidroni", "_blank");
+               window.open("https://www.github.com/alalalsam", "_blank");
                handleToastNotif("normal", "Redirecting...", "Taking you to Github!", 5000, [
                   {
                      onClick: () => {},
