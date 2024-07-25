@@ -145,25 +145,8 @@ const App = () => {
                               engineering graduate from Loyola Chicago. &{" "}
                               Here are some of the projects I've worked on in the past {" "}
                            </Paragraph>
-                           
                         </Box>
-                        {isMobile && (
-                           <Box
-                              align="center"
-                              justify="center"
-                              flex
-                              fill="horizontal"
-                              margin={{ vertical: "small" }}
-                              focusIndicator={false}
-                           >
-                              <Button
-                                 primary
-                                 icon={<ChatOption />}
-                                 label="let's talk"
-                                 onClick={() => setContactSevan(true)}
-                              />
-                           </Box>
-                        )}
+						
                      </Box>
                      {!isMobile && (
                         <Box align="center" justify="center" flex fill="horizontal">
