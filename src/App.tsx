@@ -110,7 +110,7 @@ const App = () => {
                            pad={{ horizontal: "large" }}
                         >
                            <Avatar
-                              align="center"
+                              align="left"
                               flex={false}
                               justify="center"
                               overflow="hidden"
@@ -131,7 +131,8 @@ const App = () => {
                                  Conover
                               </Heading>
                            </Box>
-                        </Box>
+							<ContactGrid setContactSevan={setContactSevan} />
+						</Box>
                         <Box align="start" justify="between" wrap direction="column" gap="small">
                            <Paragraph
                               size="large"
@@ -167,7 +168,6 @@ const App = () => {
                            <Anchor label="let's talk" onClick={() => setContactSevan(true)} />
                         </Box>
                      )}
-					 <ContactGrid setContactSevan={setContactSevan} />
                   </Box>
                   <Box
                      align="center"
