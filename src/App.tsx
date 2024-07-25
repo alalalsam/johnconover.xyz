@@ -140,8 +140,7 @@ const App = () => {
                            >
                               I'm John Conover, a computer{" "}
                               engineering graduate from Loyola Chicago. &{" "}
-                              Here are some of the projects I've been {" "}
-                              working on in my free time.{" "}
+                              Here are some of the projects I've worked on in the past {" "}
                            </Paragraph>
                            
                         </Box>
@@ -168,6 +167,7 @@ const App = () => {
                            <Anchor label="let's talk" onClick={() => setContactSevan(true)} />
                         </Box>
                      )}
+					 <ContactGrid setContactSevan={setContactSevan} />
                   </Box>
                   <Box
                      align="center"
@@ -235,7 +235,7 @@ const App = () => {
                            i'm screaming i'm creaming eating carpet my wife is leaving
                         </Paragraph>
                      </Box>
-                     <ContactGrid setContactSevan={setContactSevan} />
+   
                   </Box>
                </PageContent>
                {contactSevan && <ContactLayer setContactSevan={setContactSevan} />}
