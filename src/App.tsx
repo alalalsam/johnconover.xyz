@@ -41,6 +41,7 @@ import LocationDrop from "./components/LocationDrop";
 import useMediaQuery from "./hooks/UseMediaQuery";
 import TechnologyStack from "./components/TechnologyStack";
 import DancingImage from "./components/DancingEasterEgg";
+import ProjectBlock from "./components/ProjectBlock";
 
 const AppContainer = styled.div`
    position: relative;
@@ -191,33 +192,11 @@ const App = () => {
 								</Paragraph>
 							</Box>
 
-
-							<Box
-								align="center"
-								justify="center"
-								margin={{ top: "small" }}
-								border={{ color: "active-background", side: "top", size: "small" }}
-								gap="medium"
-							>	
-								<Box align="start" justify="center" fill="horizontal">
-									<Heading
-										level={mobileHeadingLevel}
-										margin={{ vertical: "small" }}
-										size="medium"
-									>
-										Contact
-									</Heading>
-									
-									<Paragraph
-									   size="large"
-									   margin={{ vertical: "xsmall" }}
-									   fill
-									   color="text-paragraph"
-									>
-									   i'm screaming i'm creaming eating carpet my wife is leaving
-									</Paragraph>
-								</Box>
-							</Box>
+							<ContentBlock 
+									heading="Chinese" 
+									content="Chinese Chinese Chinese, anything goes, even Chinese" 
+									mobileHeadingLevel={2} // Optional, defaults to 2
+							/>
 							
 					</PageContent>
 					{contactSevan && <ContactLayer setContactSevan={setContactSevan} />}
