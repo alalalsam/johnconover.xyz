@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Heading, Image, Video, Paragraph } from 'grommet';
+import ReactPlayer from 'react-player';
 
 interface ProjectBlockProps {
   heading: string;
@@ -32,8 +33,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, co
 		  
 			{video && (
 				<Box margin={{ vertical: "small" }}>
-					<Video controls="below" fit="cover">
-					<source src={video} type="video/mp4" />
+					<ReactPlayer url={video} controls width="100%" />
 					</Video>
 				</Box>
 			)}
