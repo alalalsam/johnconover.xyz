@@ -33,7 +33,9 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, co
 		  
 			{video && (
 				<Box margin={{ vertical: "small" }}>
-					<ReactPlayer url={video} controls width="100%" />
+					<Video controls="below" fit="cover">
+					<source src={video} type="video/mp4" />
+					</Video>
 				</Box>
 			)}
 		  

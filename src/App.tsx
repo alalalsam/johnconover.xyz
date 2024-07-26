@@ -196,7 +196,7 @@ const App = () => {
 							
 							<ProjectBlock 
 								heading="Chinese" 
-								video="https://www.youtube.com/embed/TCX1ksX3g7M?si=CsAXKdPh6rxpGcfZ&amp;controls=0"
+								video="https://drive.google.com/file/d/1i-vGOVOJawXr-pcAhLcj0X5wn8eMFdKF/view"
 								content="im insane! I'm deranged! don't let me near you! I will 
 								kill you! Im mixed race chinese/white, can I say slurs for both or neither?
 								If I rubbed a magic lamp and a genie popped out, I would have a few
