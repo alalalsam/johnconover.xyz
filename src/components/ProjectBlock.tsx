@@ -32,9 +32,15 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, co
 		  
 			{video && (
 				<Box margin={{ vertical: "small" }}>
-					<Video controls="below" fit="cover">
-					<source src={video} type="video/mp4" />
-					</Video>
+					<iframe 
+					width="100%" 
+					height="315" 
+					src={video} 
+					frameBorder="0" 
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+					allowFullScreen 
+					title={heading}
+					></iframe>
 				</Box>
 			)}
 		  
