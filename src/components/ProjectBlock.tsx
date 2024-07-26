@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Heading, Paragraph, Image, Video } from 'grommet';
+import { Box, Heading, Image, Video, Paragraph } from 'grommet';
 
 const ProjectBlock = ({ heading, picture, video, content }) => (
 	<Box
