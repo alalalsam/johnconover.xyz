@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Heading, Image, Video, Paragraph } from 'grommet';
-import ReactPlayer from 'react-player';
 
 interface ProjectBlockProps {
   heading: string;
@@ -9,7 +8,7 @@ interface ProjectBlockProps {
   content: string;
 }
 
-const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, content }) => (
+const ProjectBlock = ({ heading, picture, video, content }) => (
 	<Box
 		align="center"
 		justify="center"
