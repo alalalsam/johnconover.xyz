@@ -29,7 +29,6 @@ export const projects = [
       description: `Spearheaded research, schematic revision, hardware testing, and firmware development for a prototype low-power PCB module. 
 					Successfully decreased system power draw by 2 orders of magnitude.`,
    },
-   
    {
       name: "Robotics Team 4206",
 	  url: " ",

@@ -66,7 +66,7 @@ const ProjectBox = ({ project, onClick }) => {
          wrap
          responsive
          fill="horizontal"
-         gap={mobileGap}
+         gap="xsmall"
          direction="row"
          pad="xsmall"
          round="xsmall"

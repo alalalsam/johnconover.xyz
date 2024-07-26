@@ -137,6 +137,7 @@ const App = () => {
                      </Box>
              
                   </Box>
+				  <ProjectsTable />
                         <Box align="start" justify="between" wrap direction="row" gap="small" style={{ maxWidth: '100%' }}>
                            <Paragraph
                               size="large"
@@ -145,8 +146,8 @@ const App = () => {
                               color="text-paragraph"
 							  style={{ maxWidth: '100%' }}
                            >
-                              The Febreeze air freshener company and the scented candle industry are rife with strife and drama this saturday afternoon. after months of litigation and "political donations" intended 
-							  to maximize the market capital and quash competition of the respective companies, new information has come to light about the secret, sinister interests of the scent product industry.
+                              The Febreeze air freshener company and the scented candle industry are rife with strife and drama this saturday afternoon. After months of litigation and "political donations" intended 
+							  to maximize market capital and quash competition, new information has come to light about the secret, sinister interests of the scent product industry.
 							  Every single politically motivated action on both of these companies' behalf were sent to the same politician, an up-and-coming 24 year old hottie named Jasmine. As it turns out, both 
 							  executive boards of Febreeze and other scented candlemaking companies used their competition to mask the courting of Jasmine, who at this point in litigation has come out as lesbian.
                            </Paragraph>
@@ -164,8 +165,6 @@ const App = () => {
                         <Heading level={mobileHeadingLevel} size="large" >
 							Experience
 						</Heading>
-						
-						<ProjectsTable />
 						
 						<Heading
                            level={mobileHeadingLevel}
