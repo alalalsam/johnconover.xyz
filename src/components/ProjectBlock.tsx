@@ -8,7 +8,7 @@ interface ProjectBlockProps {
   content: string;
 }
 
-const ProjectBlock = ({ heading, picture, video, content }) => (
+const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, content }) => (
 	<Box
 		align="center"
 		justify="center"
