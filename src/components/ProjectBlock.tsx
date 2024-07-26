@@ -34,7 +34,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, co
 				<Box
 				  margin={{ vertical: "small" }}
 				  width="100%" // Full width
-				  style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }} // 16:9 aspect ratio
+				  style={{ position: 'relative',  height: 0 }} 
 				>
 					<iframe 
 						width="100%" 
