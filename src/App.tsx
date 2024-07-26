@@ -133,11 +133,11 @@ const App = () => {
                            </Box>
 							<ContactGrid setContactSevan={setContactSevan} />
 						</Box>
-						
+						<ProjectsTable />
                      </Box>
              
                   </Box>
-				  <ProjectsTable />
+				  
                         <Box align="start" justify="between" wrap direction="row" gap="small" style={{ maxWidth: '100%' }}>
                            <Paragraph
                               size="large"
