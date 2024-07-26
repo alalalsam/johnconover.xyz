@@ -137,12 +137,13 @@ const App = () => {
                      </Box>
              
                   </Box>
-                        <Box align="start" justify="between" wrap direction="row" gap="small">
+                        <Box align="start" justify="between" wrap direction="row" gap="small" style={{ maxWidth: '100%' }}>
                            <Paragraph
                               size="large"
 							  textAlign="start"
                               margin={{ vertical: "xsmall", horizontal: "xsmall" }}
                               color="text-paragraph"
+							  style={{ maxWidth: '100%' }}
                            >
                               The Febreeze air freshener company and the scented candle industry are rife with strife and drama this saturday afternoon. after months of litigation and "political donations" intended 
 							  to maximize the market capital and quash competition of the respective companies, new information has come to light about the secret, sinister interests of the scent product industry.
