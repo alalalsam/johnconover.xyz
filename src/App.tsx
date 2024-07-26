@@ -192,7 +192,7 @@ const App = () => {
 								</Paragraph>
 							</Box>
 
-							<ContentBlock 
+							<ProjectBlock 
 									heading="Chinese" 
 									content="Chinese Chinese Chinese, anything goes, even Chinese" 
 									mobileHeadingLevel={2} // Optional, defaults to 2
