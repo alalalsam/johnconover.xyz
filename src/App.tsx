@@ -178,6 +178,13 @@ const App = () => {
 							picture="https://www.uschina.org/sites/default/files/202210/xijinping.jpg"
 							content="Chinese Chinese Chinese, anything goes, even Chinese"
 						/>
+						
+						<ProjectBlock
+							heading="Gun"
+							picture="https://drive.google.com/file/d/1ZyOLNiIhvG5MgLc7JPq-DgPaasMQUj7b/view"
+							content="i am goingt o shoot you with my gun!"
+						/>
+						
 
 					</PageContent>
 					{contactSevan && <ContactLayer setContactSevan={setContactSevan} />}
