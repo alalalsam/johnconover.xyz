@@ -34,11 +34,9 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, co
 				<Box
 				  margin={{ vertical: "small" }}
 				  width="100%" // Full width
-				  style={{ position: 'relative',  height: 0 }} 
+				  style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }} // 16:9 aspect ratio
 				>
 					<iframe 
-						width="100%" 
-						height="315" 
 						src={video} 
 						frameBorder="0" 
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -47,8 +45,8 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, co
 							position: 'absolute',
 							top: 0,
 							left: 0,
-							width: '50%',
-							height: '50%'
+							width: '100%',
+							height: '100%'
 						}}
 						title={heading}
 					></iframe>

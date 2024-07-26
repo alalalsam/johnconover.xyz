@@ -146,72 +146,74 @@ const App = () => {
 					 
 						</Box>
 						  
-							<Box align="start" justify="between" wrap direction="row" gap="small" style={{ maxWidth: '100%' }}>
-								<Paragraph
-									size="large"
-									textAlign="start"
-									margin={{ vertical: "xsmall", horizontal: "xsmall" }}
-									color="text-paragraph"
-									style={{ maxWidth: '100%' }}
-								>
-									The Febreeze air freshener company and the scented candle industry are rife with strife and drama this saturday afternoon. After months of litigation and "political donations" intended 
-									to maximize market capital and quash competition, new information has come to light about the secret, sinister interests of the scent product industry.
-									Every single politically motivated action on both of these companies' behalf were sent to the same politician, an up-and-coming 24 year old hottie named Jasmine. As it turns out, both 
-									executive boards of Febreeze and other scented candlemaking companies used their competition to mask the courting of Jasmine, who at this point in litigation has come out as lesbian.
-								</Paragraph>
-							</Box>
-						  
-							<Box
-								align="center"
-								justify="center"
-								margin={{ top: "small" }}
-								border={{ color: "active-background", side: "top", size: "small" }}
-								gap="small"
+						<Box align="start" justify="between" wrap direction="row" gap="small" style={{ maxWidth: '100%' }}>
+							<Paragraph
+								size="large"
+								textAlign="start"
+								margin={{ vertical: "xsmall", horizontal: "xsmall" }}
+								color="text-paragraph"
+								style={{ maxWidth: '100%' }}
 							>
-								<Heading
-									level={mobileHeadingLevel}
-									margin={{ vertical: "small" }}
-									size="large"
-								>
-									Projects
-								</Heading>
+								The Febreeze air freshener company and the scented candle industry are rife with strife and drama this saturday afternoon. After months of litigation and "political donations" intended 
+								to maximize market capital and quash competition, new information has come to light about the secret, sinister interests of the scent product industry.
+								Every single politically motivated action on both of these companies' behalf were sent to the same politician, an up-and-coming 24 year old hottie named Jasmine. As it turns out, both 
+								executive boards of Febreeze and other scented candlemaking companies used their competition to mask the courting of Jasmine, who at this point in litigation has come out as lesbian.
+							</Paragraph>
+						</Box>
+					  
+						<Box
+							align="center"
+							justify="center"
+							margin={{ top: "small" }}
+							border={{ color: "active-background", side: "top", size: "small" }}
+							gap="small"
+						>
+							<Heading
+								level={mobileHeadingLevel}
+								margin={{ vertical: "small" }}
+								size="large"
+							>
+								Projects
+							</Heading>
 
-								<Paragraph
-									size="large"
-									margin={{ vertical: "xsmall" }}
-									fill
-									color="text-paragraph"
-								>
-									im insane! I'm deranged! don't let me near you! I will 
-									kill you!{" "}
-									Im mixed race chinese/white, can I say slurs for both or neither?{" "}
-									If I rubbed a magic lamp and a genie popped out, I would have a few{" "}
-									wishes. One of these wishes would be that league of legends would 
-									never have {" "}
-									been created. The next wish would be for all food to taste really good. My last
-									and final wish would be big muscles. oh wait, I already{" "}
-									have big muscles. 
-								</Paragraph>
-							</Box>
-							
-							<ProjectBlock 
-								heading="Chinese" 
-								video="https://www.youtube.com/embed/CQXmo3V4MzM?si=N1gh3qNAMYgwFCib"
-								content="im insane! I'm deranged! don't let me near you! I will 
-								kill you! Im mixed race chinese/white, can I say slurs for both or neither?
-								If I rubbed a magic lamp and a genie popped out, I would have a few
+							<Paragraph
+								size="large"
+								margin={{ vertical: "xsmall" }}
+								fill
+								color="text-paragraph"
+							>
+								im insane! I'm deranged! don't let me near you! I will 
+								kill you!{" "}
+								Im mixed race chinese/white, can I say slurs for both or neither?{" "}
+								If I rubbed a magic lamp and a genie popped out, I would have a few{" "}
 								wishes. One of these wishes would be that league of legends would 
-								never have been created. The next wish would be for all food to taste really good. My last
-								and final wish would be big muscles. oh wait, I already
-								have big muscles." 
-							/>
+								never have {" "}
+								been created. The next wish would be for all food to taste really good. My last
+								and final wish would be big muscles. oh wait, I already{" "}
+								have big muscles. 
+							</Paragraph>
+						</Box>
 							
-							<ProjectBlock 
-								heading="Chinese" 
-								picture="https://www.uschina.org/sites/default/files/202210/xijinping.jpg"
-								content="Chinese Chinese Chinese, anything goes, even Chinese"
-							/>
+						<ProjectBlock 
+							heading="Chinese" 
+							video="https://www.youtube.com/embed/CQXmo3V4MzM?si=N1gh3qNAMYgwFCib"
+							content="im insane! I'm deranged! don't let me near you! I will 
+							kill you! Im mixed race chinese/white, can I say slurs for both or neither?
+							If I rubbed a magic lamp and a genie popped out, I would have a few
+							wishes. One of these wishes would be that league of legends would 
+							never have been created. The next wish would be for all food to taste really good. My last
+							and final wish would be big muscles. oh wait, I already
+							have big muscles." 
+						/>
+						
+						<ProjectBlock 
+							heading="Chinese" 
+							picture="https://www.uschina.org/sites/default/files/202210/xijinping.jpg"
+							content="Chinese Chinese Chinese, anything goes, even Chinese"
+						/>
 							
+						<Box align="center" justify="center" margin={{ top: "small" }} gap="small">
+						<Box>						
 					</PageContent>
 					{contactSevan && <ContactLayer setContactSevan={setContactSevan} />}
 					{locationDrop && (
