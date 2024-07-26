@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Heading, Paragraph } from 'grommet';
 
-const ProjectBlock = ({ heading, content, mobileHeadingLevel = 2 }) => (
+const ProjectBlock = ({ heading, content }) => (
   <Box
     align="center"
     justify="center"
@@ -11,7 +11,6 @@ const ProjectBlock = ({ heading, content, mobileHeadingLevel = 2 }) => (
   >
     <Box align="start" justify="center" fill="horizontal">
       <Heading
-        level={mobileHeadingLevel}
         margin={{ vertical: "small" }}
         size="medium"
       >
