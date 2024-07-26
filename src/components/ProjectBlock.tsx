@@ -26,7 +26,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, co
 		  
 			{picture && (
 				<Box margin={{ vertical: "small" }}>
-					<Image src={picture} fit="cover" />
+					<img src={picture} alt="Project" style={{ maxWidth ="100%" />
 				</Box>
 			)}
 		  
