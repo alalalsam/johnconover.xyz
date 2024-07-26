@@ -185,7 +185,9 @@ const App = () => {
 							content="i am goingt o shoot you with my gun!"
 						/>
 						
-
+						<Box align="start" justify="between" wrap direction="row" gap="small" style={{ maxWidth: '100%' }}>
+						</Box>
+						
 					</PageContent>
 					{contactSevan && <ContactLayer setContactSevan={setContactSevan} />}
 					{locationDrop && (
