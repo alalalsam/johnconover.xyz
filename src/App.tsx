@@ -145,7 +145,7 @@ const App = () => {
 							</Box>
 					 
 						</Box>
-						  
+
 						<Box align="start" justify="between" wrap direction="row" gap="small" style={{ maxWidth: '100%' }}>
 							<Paragraph
 								size="large"
@@ -160,43 +160,10 @@ const App = () => {
 								executive boards of Febreeze and other scented candlemaking companies used their competition to mask the courting of Jasmine, who at this point in litigation has come out as lesbian.
 							</Paragraph>
 						</Box>
-					  
-						<Box
-							align="center"
-							justify="center"
-							margin={{ top: "small" }}
-							border={{ color: "active-background", side: "top", size: "small" }}
-							gap="small"
-						>
-							<Heading
-								level={mobileHeadingLevel}
-								margin={{ vertical: "small" }}
-								size="large"
-							>
-								Projects
-							</Heading>
-
-							<Paragraph
-								size="large"
-								margin={{ vertical: "xsmall" }}
-								fill
-								color="text-paragraph"
-							>
-								im insane! I'm deranged! don't let me near you! I will 
-								kill you!{" "}
-								Im mixed race chinese/white, can I say slurs for both or neither?{" "}
-								If I rubbed a magic lamp and a genie popped out, I would have a few{" "}
-								wishes. One of these wishes would be that league of legends would 
-								never have {" "}
-								been created. The next wish would be for all food to taste really good. My last
-								and final wish would be big muscles. oh wait, I already{" "}
-								have big muscles. 
-							</Paragraph>
-						</Box>
-							
+					
 						<ProjectBlock 
 							heading="Chinese" 
-							video="https://www.youtube.com/embed/CQXmo3V4MzM?si=N1gh3qNAMYgwFCib"
+							video="https://www.youtube.com/embed/Je4tujqKkMc?si=uaf9h1WsP971sbeR"
 							content="im insane! I'm deranged! don't let me near you! I will 
 							kill you! Im mixed race chinese/white, can I say slurs for both or neither?
 							If I rubbed a magic lamp and a genie popped out, I would have a few
@@ -211,7 +178,6 @@ const App = () => {
 							picture="https://www.uschina.org/sites/default/files/202210/xijinping.jpg"
 							content="Chinese Chinese Chinese, anything goes, even Chinese"
 						/>
-
 
 					</PageContent>
 					{contactSevan && <ContactLayer setContactSevan={setContactSevan} />}
