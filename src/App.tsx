@@ -181,7 +181,7 @@ const App = () => {
 						
 						<ProjectBlock
 							heading="Gun"
-							picture="https://drive.google.com/uc?export=view&id=1uKnAzXxIe_IlN0AyyDp6j5t3lY83XKmv"
+							picture="https://drive.google.com/uc?export=view&id=1ZyOLNiIhvG5MgLc7JPq-DgPaasMQUj7b"
 							content="i am goingt o shoot you with my gun!"
 						/>
 						
