@@ -160,12 +160,6 @@ const App = () => {
                      border={{ color: "active-background", side: "top", size: "small" }}
                      gap="small"
                   >
-				  
-                     <Box align="start" justify="center" fill="horizontal">
-                        <Heading level={mobileHeadingLevel} size="large" >
-							Experience
-						</Heading>
-						
 						<Heading
                            level={mobileHeadingLevel}
                            margin={{ vertical: "small" }}
