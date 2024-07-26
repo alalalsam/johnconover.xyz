@@ -37,7 +37,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, co
 				  style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }} // 16:9 aspect ratio
 				>
 					<iframe 
-						src={video} 
+						src={`${video}?autoplay=1`}
 						frameBorder="0" 
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 						allowFullScreen 
