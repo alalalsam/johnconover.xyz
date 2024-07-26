@@ -9,6 +9,8 @@ import {
    Avatar,
    Heading,
    Paragraph,
+   Image,
+   Video,
    Anchor,
    Button,
    Layer,
@@ -193,21 +195,21 @@ const App = () => {
 							</Box>
 							
 							<ProjectBlock 
-									heading="Chinese" 
-									content="im insane! I'm deranged! don't let me near you! I will 
-									kill you!
-									Im mixed race chinese/white, can I say slurs for both or neither?
-									If I rubbed a magic lamp and a genie popped out, I would have a few
-									wishes. One of these wishes would be that league of legends would 
-									never have 
-									been created. The next wish would be for all food to taste really good. My last
-									and final wish would be big muscles. oh wait, I already
-									have big muscles." 
+								heading="Chinese" 
+								content="im insane! I'm deranged! don't let me near you! I will 
+								kill you! Im mixed race chinese/white, can I say slurs for both or neither?
+								If I rubbed a magic lamp and a genie popped out, I would have a few
+								wishes. One of these wishes would be that league of legends would 
+								never have been created. The next wish would be for all food to taste really good. My last
+								and final wish would be big muscles. oh wait, I already
+								have big muscles." 
+								video="https://www.youtube.com/embed/bI0vq6rDxpc?si=KNuJ8MpdwJpjlzMi"
 							/>
 							
 							<ProjectBlock 
-									heading="Chinese" 
-									content="Chinese Chinese Chinese, anything goes, even Chinese" 
+								heading="Chinese" 
+								content="Chinese Chinese Chinese, anything goes, even Chinese"
+								picture="https://www.uschina.org/sites/default/files/202210/xijinping.jpg"
 							/>
 							
 					</PageContent>
