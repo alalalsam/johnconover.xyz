@@ -211,9 +211,8 @@ const App = () => {
 							picture="https://www.uschina.org/sites/default/files/202210/xijinping.jpg"
 							content="Chinese Chinese Chinese, anything goes, even Chinese"
 						/>
-							
-						<Box align="center" justify="center" margin={{ top: "small" }} gap="small">
-						<Box>						
+
+
 					</PageContent>
 					{contactSevan && <ContactLayer setContactSevan={setContactSevan} />}
 					{locationDrop && (
