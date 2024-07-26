@@ -33,7 +33,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, co
 			{video && (
 				<Box margin={{ vertical: "small" }}>
 					<iframe 
-					width="100%" 
+					width="560" 
 					height="315" 
 					src={video} 
 					frameBorder="0" 
