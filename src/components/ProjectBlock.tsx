@@ -1,7 +1,14 @@
 import React from 'react';
 import { Box, Heading, Image, Video, Paragraph } from 'grommet';
 
-const ProjectBlock = ({ heading, picture, video, content }) => (
+interface ProjectBlockProps {
+  heading: string;
+  picture?: string;
+  video?: string;
+  content: string;
+}
+
+const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, content }) => (
 	<Box
 		align="center"
 		justify="center"
