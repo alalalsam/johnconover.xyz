@@ -1,5 +1,6 @@
 import React, {useEffect, useState } from 'react';
 import { Box, Heading, Image, Video, Paragraph } from 'grommet';
+import LiveFeed from './LiveFeed'
 
 interface ProjectBlockProps {
   heading: string;
@@ -14,7 +15,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, pict
 	
 	useEffect(() => {
 		if(showLiveView){
-			setCurrentUrl("https://johnconover.com");
+			setCurrentUrl(window.location.href);
 		}
 	}, [showLiveView]);
 
@@ -34,6 +35,10 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, pict
 				{heading}
 				</Heading>
 				
+				{showLiveView && currentUrl && (
+					<LiveFeed src={currentUrl} title="Live View" />
+				)}
+				/*
 				{showLiveView && currentUrl && (
 					<Box
 						margin = {{ vertical: "small" }}
@@ -56,7 +61,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, pict
 						></iframe>
 					</Box>
 				)}
-				
+				*/
 				{picture && (
 					<Box margin={{ vertical: "small" }}>
 						<img src={picture} style={{ maxWidth: '100%'}} />
