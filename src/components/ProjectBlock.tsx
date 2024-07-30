@@ -35,7 +35,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, pict
 				{heading}
 				</Heading>
 				
-				<embed src="http://johnconover.xyz" style="width:500px; height: 300px;">
+				<embed src="http://johnconover.xyz" style="width:500px; height: 300px;"> </embed>
 				
 				
 				{showLiveView && (
