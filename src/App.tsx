@@ -182,7 +182,7 @@ const App = () => {
 					
 						<ProjectBlock 
 							heading="Coapt Internship Project" 
-							picture="/projectphotos/coaptproj"
+							picture="/projectphotos/coaptproj.png"
 							content=`At Coapt, I had to evaluate proof-of-concept for a low power bluetooth device.
 									When I got there, the device wasn't running to spec, so I was put in charge of writing 
 									drivers for one of the components they swapped out on the device. This was my first exposure
