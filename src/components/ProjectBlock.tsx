@@ -1,4 +1,4 @@
-import React, {useEfferc, useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import { Box, Heading, Image, Video, Paragraph } from 'grommet';
 
 interface ProjectBlockProps {
