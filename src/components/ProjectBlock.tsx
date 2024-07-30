@@ -3,14 +3,14 @@ import { Box, Heading, Image, Video, Paragraph } from 'grommet';
 
 interface ProjectBlockProps {
   heading: string;
-  window?: boolean;
+  showWindow?: boolean;
   picture?: string;
   video?: string;
   content: string | string[];
 }
 
-const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, window, picture, video, content }) => {
-	const currentWindow = window || typeof window !== 'undefined' ? window.location.href : 'Window location not available';
+const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showWindow, picture, video, content }) => {
+	const currentWindow = showWindow ? (typeof window !== 'undefined' ? window.location.href : 'Window location not available') : '';
 
 	return (
 		<Box
@@ -28,7 +28,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, window, picture, v
 				{heading}
 				</Heading>
 				
-				{currentWindow && (
+				{showWindow && (
 					<Paragraph
 						size="medium"
 						margin={{ vertical: "small" }}
