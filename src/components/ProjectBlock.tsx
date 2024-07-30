@@ -35,8 +35,10 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, pict
 				{heading}
 				</Heading>
 				
-				<embed src="http://johnconover.xyz" style="width:500px; height: 300px;"> </embed>
-				
+				<iframe src="https://johnconover.xyz" width="100%" height="300">
+					<p>Your browser does not support iframes.</p>
+				</iframe>
+
 				
 				{showLiveView && (
 					<LiveFeed src={"https://johnconover.xyz"} title="Live View" />
