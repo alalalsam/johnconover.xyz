@@ -177,7 +177,7 @@ const App = () => {
 									Since the 3ds homebrew development environment is literally hacky, completing this 
 									project taught me a lot about what exactly is involved in running applications on 
 									different platforms. `
-							}
+							]}
 						/>
 					
 						<ProjectBlock 
