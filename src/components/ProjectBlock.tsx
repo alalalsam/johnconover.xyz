@@ -1,16 +1,22 @@
-import React from 'react';
+import React, {useEfferc, useState } from 'react';
 import { Box, Heading, Image, Video, Paragraph } from 'grommet';
 
 interface ProjectBlockProps {
   heading: string;
-  showWindow?: boolean;
+  showLiveView?: boolean;
   picture?: string;
   video?: string;
   content: string | string[];
 }
 
-const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showWindow, picture, video, content }) => {
-	const currentWindow = showWindow ? (typeof window !== 'undefined' ? window.location.href : 'Window location not available') : '';
+const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, picture, video, content }) => {
+	const [currentUrl, setCurrentURL] = useState('');
+	
+	useEffect(() => {
+		if(showLiveView){
+			setCurrentUrl(window.location.href);
+		}
+	}, [showLiveView]);
 
 	return (
 		<Box
@@ -28,18 +34,29 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showWindow, pictur
 				{heading}
 				</Heading>
 				
-				{showWindow && (
-					<Paragraph
-						size="medium"
-						margin={{ vertical: "small" }}
-						fill
-						color="status-unknown"
+				{showLiveView && currentUrl && (
+					<Box
+						margin = {{ vertical: "small" }}
+						width="100%"
+						style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}
 					>
-						Current view: {currentWindow}
-					</Paragraph>
+						<iframe
+							src={currentUrl}
+							frameBorder = "0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowFullScreen
+							style={{
+								position: 'absolute'
+								top: 0,
+								left: 0,
+								width: '100%',
+								height: '100%'
+							}}
+							title="Live View"
+						></iframe>
+					</Box>
 				)}
 				
-			  
 				{picture && (
 					<Box margin={{ vertical: "small" }}>
 						<img src={picture} style={{ maxWidth: '100%'}} />
