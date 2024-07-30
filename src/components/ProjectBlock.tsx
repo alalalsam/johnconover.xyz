@@ -13,9 +13,9 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, pict
 	const [currentUrl, setCurrentUrl] = useState('');
 	
 	useEffect(() => {
-		//if(showLiveView){
-		//	setCurrentUrl(window.location.href);
-		//}
+		if(showLiveView){
+			setCurrentUrl("https://johnconover.com");
+		}
 	}, [showLiveView]);
 
 	return (
