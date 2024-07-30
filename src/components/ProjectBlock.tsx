@@ -5,7 +5,7 @@ interface ProjectBlockProps {
   heading: string;
   picture?: string;
   video?: string;
-  content: string[];
+  content: string | string[];
 }
 
 const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, content }) => (
@@ -53,17 +53,28 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, picture, video, co
 				</Box>
 			)}
 		  
-			{content.map((paragraph, index) => (
+			{Array.isArray(content) ? (
+				content.map((paragraph, index) => (
+					<Paragraph
+						key={index}
+						size="large"
+						margin={{ vertical: "xsmall" }}
+						fill
+						color="text-paragraph"
+					>
+						{paragraph}
+					</Paragraph>
+				))
+			) : (
 				<Paragraph
-					key={index}
-					size="large"
-					margin={{ vertical: "xsmall" }}
-					fill
-					color="text-paragraph"
+				    size="large"
+				    margin={{ vertical: "xsmall" }}
+				    fill
+				    color="text-paragraph"
 				>
-					{paragraph}
+				    {content}
 				</Paragraph>
-			))}
+			)}
 			
 		</Box>
 	</Box>

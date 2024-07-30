@@ -202,7 +202,7 @@ const App = () => {
 									wishes. One of these wishes would be that league of legends would 
 									never have been created. The next wish would be for all food to taste really good. My last
 									and final wish would be big muscles. oh wait, I already
-									have big muscles." 
+									have big muscles.",  
 						/>
 						
 						<ProjectBlock 
