@@ -1,6 +1,7 @@
 import React, {useEffect, useState } from 'react';
 import { Box, Heading, Image, Video, Paragraph } from 'grommet';
-import LiveFeed from './LiveFeed'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import RecursiveComponent from './RecursiveComponent'
 
 interface ProjectBlockProps {
   heading: string;
@@ -35,10 +36,19 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, pict
 				{heading}
 				</Heading>
 				
-				<iframe src="https://johnconover.xyz" width="100%" height="300">
-					<p>Your browser does not support iframes.</p>
-				</iframe>
-
+				
+				<Router>
+					<Switch>
+						<Route path="/recursive-embed">
+							<RecursiveEmbed />
+						</Route>
+						<Route path="/">
+							<Box align="center" justify="center" pad="large">
+								<RecursiveEmbed />
+							</Box>
+						</Route>
+					</Switch>
+				</Router>
 				
 				{showLiveView && (
 					<LiveFeed src={"https://johnconover.xyz"} title="Live View" />
