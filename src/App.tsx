@@ -160,17 +160,50 @@ const App = () => {
 								executive boards of Febreeze and other scented candlemaking companies used their competition to mask the courting of Jasmine, who at this point in litigation has come out as lesbian.
 							</Paragraph>
 						</Box>
-					
+						
+						<ProjectBlock 
+							heading="3ds Dataset Building Utility" 
+							video="https://www.youtube.com/embed/y00-irguHc4?si=Oef4jmxugdEvjqEv"
+							content="     This is a homebrew 3ds program that I'm using to make me a machine learning
+									dataset. It employs multithreading to collect stereoscopic image pairs every few seconds, but only when the 3d mode is turned on. 
+									Initially, I had a working version in 2 days, but this version would freeze gameplay for a quarter second
+									every time It saved the screenshot to memory. I hated this a lot, so I spent
+									2 weeks working on a multithreading implementation to write the screenshots
+									in a way that wouldn't interrupt gameplay. Employing multithreading wasn't 
+									too difficult, but I had an issue where the leftmost column of pixels 
+									would be missing, and the rightmost would be full of noise for one of my 
+									image pairs. \n \n     Initially, I thought this was an issue with which address my 
+									code was info from, but that wasn't the case.
+									what was happening was that whenever the left stereoscopic image pair was written
+									to cache, the dummy variables used during that operation were left in the addresses
+									directly after the first screenshot's location, which overwrote the start of 
+									the second screenshot. To fix this, I allocated an extra
+									column of pixels in cache, and offset the writing of the right image pair by that column.
+									The extra column I allocated would then be filled with the dummy values, and the 
+									right view's data would remain untouched. For the entire week it took me to find that 
+									out, I felt like a complete moron, although I felt pretty smart once everything 
+									was working coorectly."
+									
+						/>
+						
+						<ProjectBlock 
+							heading="MLPerf Tiny inference on 3ds" 
+							picture="https://lh3.googleusercontent.com/9SnAwnXKWV0vglSkD-dWkoY1_lKfCMxxsa9tfEpTS5LKgJYCJgxiT3TZ3sGLLIeRRzU5JIiZ42DNRLg8QKRbiKe1jlU5PRG5IMQ3zLFIIQNR7LRcCpAgG5ka7q552rw2cs-h5_NfaEPgcSP07X10-g"
+							video="https://www.youtube.com/embed/OHeZvUHVpf4?si=Yt5bs96ExDIlWa_v"
+							content="ran ml benchmark model on 3ds. cross-compiled using microtvm"
+									
+						/>
+						
 						<ProjectBlock 
 							heading="Chinese" 
 							video="https://www.youtube.com/embed/Je4tujqKkMc?si=uaf9h1WsP971sbeR"
 							content="im insane! I'm deranged! don't let me near you! I will 
-							kill you! Im mixed race chinese/white, can I say slurs for both or neither?
-							If I rubbed a magic lamp and a genie popped out, I would have a few
-							wishes. One of these wishes would be that league of legends would 
-							never have been created. The next wish would be for all food to taste really good. My last
-							and final wish would be big muscles. oh wait, I already
-							have big muscles." 
+									kill you! Im mixed race chinese/white, can I say slurs for both or neither?
+									If I rubbed a magic lamp and a genie popped out, I would have a few
+									wishes. One of these wishes would be that league of legends would 
+									never have been created. The next wish would be for all food to taste really good. My last
+									and final wish would be big muscles. oh wait, I already
+									have big muscles." 
 						/>
 						
 						<ProjectBlock 
@@ -182,11 +215,16 @@ const App = () => {
 						<ProjectBlock
 							heading="Gun"
 							picture="/projectPhotos/gun.JPG"
-							content="i am goingt o shoot you with my gun!"
+							content="     I was bored in engineering class one day, so I went into our 
+									shipping container full of trash, and made this gun out of garbage.
+									It uses a cannibalized power drill to power a compressor, which 
+									builds pressure. It then uses a solenoid to dump that pressure. 
+									Unfortunately, the solenoids we had couldn't dump all pressure
+									at once, and the valves we had that could were already being used
+									by more useful projects, so the gun couldn't hurt anyone unless you
+									hit them with it. Ultimately it ended up being used for
+									testing which pistons in our shipping container full of trash worked"
 						/>
-						
-						<Box align="start" justify="between" wrap direction="row" gap="small" style={{ maxWidth: '100%' }}>
-						</Box>
 						
 					</PageContent>
 					{contactSevan && <ContactLayer setContactSevan={setContactSevan} />}
