@@ -164,26 +164,25 @@ const App = () => {
 						<ProjectBlock 
 							heading="3ds Dataset Building Utility" 
 							video="https://www.youtube.com/embed/y00-irguHc4?si=Oef4jmxugdEvjqEv"
-							content="     This is a homebrew 3ds program that I'm using to make me a machine learning
+							content={["This is a homebrew 3ds program that I'm using to make me a machine learning
 									dataset. It employs multithreading to collect stereoscopic image pairs every few seconds, but only when the 3d mode is turned on. 
 									Initially, I had a working version in 2 days, but this version would freeze gameplay for a quarter second
 									every time It saved the screenshot to memory. I hated this a lot, so I spent
 									2 weeks working on a multithreading implementation to write the screenshots
-									in a way that wouldn't interrupt gameplay. Employing multithreading wasn't 
+									in a way that wouldn't interrupt gameplay.",  
+									"Employing multithreading wasn't 
 									too difficult, but I had an issue where the leftmost column of pixels 
 									would be missing, and the rightmost would be full of noise for one of my 
-									image pairs. /n /n     Initially, I thought this was an issue with which address my 
-									code was info from, but that wasn't the case.
+									image pairs. Initially, I thought this was an issue with which address my 
+									code was reading from, but that wasn't the case.
 									what was happening was that whenever the left stereoscopic image pair was written
-									to cache, the dummy variables used during that operation were left in the addresses
+									to cache, the dummy variables used during that operation were located in the addresses
 									directly after the first screenshot's location, which overwrote the start of 
 									the second screenshot. To fix this, I allocated an extra
 									column of pixels in cache, and offset the writing of the right image pair by that column.
 									The extra column I allocated would then be filled with the dummy values, and the 
-									right view's data would remain untouched. For the entire week it took me to find that 
-									out, I felt like a complete moron, although I felt pretty smart once everything 
-									was working coorectly."
-									
+									right view's data would remain untouched."
+									]}
 						/>
 						
 						<ProjectBlock 
@@ -222,8 +221,8 @@ const App = () => {
 									Unfortunately, the solenoids we had couldn't dump all pressure
 									at once, and the valves we had that could were already being used
 									by more useful projects, so the gun couldn't hurt anyone unless you
-									hit them with it. Ultimately it ended up being used for
-									testing which pistons in our shipping container full of trash worked"
+									hit them with it. It ended up being used for
+									testing which pistons in our shipping container full of trash worked."
 						/>
 						
 					</PageContent>
