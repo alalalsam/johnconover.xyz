@@ -35,7 +35,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, pict
 				{heading}
 				</Heading>
 				
-				{showLiveView && currentUrl && (
+				{showLiveView && (
 					<LiveFeed src={"https://johnconover.xyz"} title="Live View" />
 				)}
 				/*
