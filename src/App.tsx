@@ -172,7 +172,7 @@ const App = () => {
 									in a way that wouldn't interrupt gameplay. Employing multithreading wasn't 
 									too difficult, but I had an issue where the leftmost column of pixels 
 									would be missing, and the rightmost would be full of noise for one of my 
-									image pairs. \n \n     Initially, I thought this was an issue with which address my 
+									image pairs. /n /n     Initially, I thought this was an issue with which address my 
 									code was info from, but that wasn't the case.
 									what was happening was that whenever the left stereoscopic image pair was written
 									to cache, the dummy variables used during that operation were left in the addresses
