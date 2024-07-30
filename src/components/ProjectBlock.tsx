@@ -3,7 +3,7 @@ import { Box, Heading, Image, Video, Paragraph } from 'grommet';
 
 interface ProjectBlockProps {
   heading: string;
-  window?: string;
+  window?: boolean;
   picture?: string;
   video?: string;
   content: string | string[];
