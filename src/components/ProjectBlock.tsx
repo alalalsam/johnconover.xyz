@@ -38,6 +38,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, window, picture, v
 						Current view: {currentWindow}
 					</Paragraph>
 				)}
+				
 			  
 				{picture && (
 					<Box margin={{ vertical: "small" }}>

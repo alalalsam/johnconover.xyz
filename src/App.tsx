@@ -229,7 +229,7 @@ const App = () => {
 						
 						<ProjectBlock 
 							heading="Hilarious Website" 
-							window
+							window={true}
 							content={`im insane! I'm deranged! don't let me near you! I will 
 									kill you! Im mixed race chinese/white, can I say slurs for both or neither?
 									If I rubbed a magic lamp and a genie popped out, I would have a few
