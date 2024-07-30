@@ -10,7 +10,7 @@ interface ProjectBlockProps {
 }
 
 const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, picture, video, content }) => {
-	const [currentUrl, setCurrentURL] = useState('');
+	const [currentUrl, setCurrentUrl] = useState('');
 	
 	useEffect(() => {
 		if(showLiveView){
