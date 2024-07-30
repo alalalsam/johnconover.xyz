@@ -176,20 +176,19 @@ const App = () => {
 									model for inference on the 3ds, with some help from a tutorial on the TVM website. 
 									Since the 3ds homebrew development environment is literally hacky, completing this 
 									project taught me a lot about what exactly is involved in running applications on 
-									different platforms. `
-							]}
+									different platforms. `]}
 						/>
 					
 						<ProjectBlock 
 							heading="Coapt Internship Project" 
 							picture="/projectphotos/coaptproj.png"
-							content=`At Coapt, I had to evaluate proof-of-concept for a low power bluetooth device.
+							content={`At Coapt, I had to evaluate proof-of-concept for a low power bluetooth device.
 									When I got there, the device wasn't running to spec, so I was put in charge of writing 
 									drivers for one of the components they swapped out on the device. This was my first exposure
 									to embedded systems and using C extensively, so it took me a little while to get into the 
 									swing of things. Once I got comfortable coding though, I implemented their requested functionality, 
 									and even threw together a couple test scripts that I could flash onto the device to make 
-									testing a little easier for the hardware guys.` 
+									testing a little easier for the hardware guys.`} 
 						/>
 						
 						<ProjectBlock 
@@ -213,32 +212,31 @@ const App = () => {
 									the second screenshot. To fix this, I allocated an extra
 									column of pixels in cache, and offset the writing of the right image pair by that column.
 									The extra column I allocated would then be filled with the dummy values, and the 
-									right view's data would remain untouched.`
-							]}
+									right view's data would remain untouched.`]}
 						/>
 						
 						<ProjectBlock 
 							heading="Chinese" 
 							video="https://www.youtube.com/embed/Je4tujqKkMc?si=uaf9h1WsP971sbeR"
-							content=`im insane! I'm deranged! don't let me near you! I will 
+							content={`im insane! I'm deranged! don't let me near you! I will 
 									kill you! Im mixed race chinese/white, can I say slurs for both or neither?
 									If I rubbed a magic lamp and a genie popped out, I would have a few
 									wishes. One of these wishes would be that league of legends would 
 									never have been created. The next wish would be for all food to taste really good. My last
 									and final wish would be big muscles. oh wait, I already
-									have big muscles.`  
+									have big muscles.`}  
 						/>
 						
 						<ProjectBlock 
 							heading="Hilarious Website" 
 							window
-							content=`im insane! I'm deranged! don't let me near you! I will 
+							content={`im insane! I'm deranged! don't let me near you! I will 
 									kill you! Im mixed race chinese/white, can I say slurs for both or neither?
 									If I rubbed a magic lamp and a genie popped out, I would have a few
 									wishes. One of these wishes would be that league of legends would 
 									never have been created. The next wish would be for all food to taste really good. My last
 									and final wish would be big muscles. oh wait, I already
-									have big muscles.`  
+									have big muscles.`}  
 						/>
 						
 						<ProjectBlock 
