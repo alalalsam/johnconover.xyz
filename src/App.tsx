@@ -160,20 +160,52 @@ const App = () => {
 								executive boards of Febreeze and other scented candlemaking companies used their competition to mask the courting of Jasmine, who at this point in litigation has come out as lesbian.
 							</Paragraph>
 						</Box>
+
+						<ProjectBlock 
+							heading="MLPerf Tiny inference on 3ds" 
+							video="https://www.youtube.com/embed/OHeZvUHVpf4?si=Yt5bs96ExDIlWa_v"
+							content={[`I'm currently developing universal 3d-mode support for any application 
+									running on the 3ds, and this was the first foray into seeing whether or not 
+									that was possible. Currently, the most viable path to universal 3D involves using ML 
+									to predict steroscopic image pairs, then displaying the generated image pair along with 
+									the original with the 3ds gpu stack. I've tested displaying predicted image pairs on 
+									the 3ds, and it works surprisingly well. If you're curious about learning how the 3ds' 3d display  
+									works, this website has a pretty good explanation: https://gbatemp.net/threads/better-stereoscopic-3d-patches-cheat-codes-releases-development-and-discussion.625945/
+									`,
+									`Anyways, for this project I used TVM to cross-compile the MLPerf Tiny Visual Wake Words
+									model for inference on the 3ds, with some help from a tutorial on the TVM website. 
+									Since the 3ds homebrew development environment is literally hacky, completing this 
+									project taught me a lot about what exactly is involved in running applications on 
+									different platforms. `
+							}
+						/>
+					
+						<ProjectBlock 
+							heading="Coapt Internship Project" 
+							picture="/projectphotos/coaptproj"
+							content=`At Coapt, I had to evaluate proof-of-concept for a low power bluetooth device.
+									When I got there, the device wasn't running to spec, so I was put in charge of writing 
+									drivers for one of the components they swapped out on the device. This was my first exposure
+									to embedded systems and using C extensively, so it took me a little while to get into the 
+									swing of things. Once I got comfortable coding though, I implemented their requested functionality, 
+									and even threw together a couple test scripts that I could flash onto the device to make 
+									testing a little easier for the hardware guys.` 
+						/>
 						
 						<ProjectBlock 
 							heading="3ds Dataset Building Utility" 
 							video="https://www.youtube.com/embed/y00-irguHc4?si=Oef4jmxugdEvjqEv"
 							content={[ `This is a homebrew 3ds program that I'm using to make me a machine learning
-									dataset. It employs multithreading to collect stereoscopic image pairs every few seconds, but only when the 3d mode is turned on. 
+									dataset. It employs multithreading to collect stereoscopic 3D image pairs every few seconds.
 									Initially, I had a working version in 2 days, but this version would freeze gameplay for a quarter second
 									every time It saved the screenshot to memory. I hated this a lot, so I spent
 									2 weeks working on a multithreading implementation to write the screenshots
-									in a way that wouldn't interrupt gameplay.`,  
+									in a way that wouldn't interrupt gameplay.
+									`,  
 									`Employing multithreading wasn't 
-									too difficult, but I had an issue where the leftmost column of pixels 
-									would be missing, and the rightmost would be full of noise for one of my 
-									image pairs. Initially, I thought this was an issue with which address my 
+									too difficult, but I had an issue where, for one of my image pairs, the leftmost column of pixels 
+									would be missing, and the rightmost would be full of noise. Initially, 
+									I thought this was an issue with which address my 
 									code was reading from, but that wasn't the case.
 									what was happening was that whenever the left stereoscopic image pair was written
 									to cache, the dummy variables used during that operation were located in the addresses
@@ -182,27 +214,31 @@ const App = () => {
 									column of pixels in cache, and offset the writing of the right image pair by that column.
 									The extra column I allocated would then be filled with the dummy values, and the 
 									right view's data would remain untouched.`
-									]}
-						/>
-						
-						<ProjectBlock 
-							heading="MLPerf Tiny inference on 3ds" 
-							picture="https://lh3.googleusercontent.com/9SnAwnXKWV0vglSkD-dWkoY1_lKfCMxxsa9tfEpTS5LKgJYCJgxiT3TZ3sGLLIeRRzU5JIiZ42DNRLg8QKRbiKe1jlU5PRG5IMQ3zLFIIQNR7LRcCpAgG5ka7q552rw2cs-h5_NfaEPgcSP07X10-g"
-							video="https://www.youtube.com/embed/OHeZvUHVpf4?si=Yt5bs96ExDIlWa_v"
-							content="ran ml benchmark model on 3ds. cross-compiled using microtvm"
-									
+							]}
 						/>
 						
 						<ProjectBlock 
 							heading="Chinese" 
 							video="https://www.youtube.com/embed/Je4tujqKkMc?si=uaf9h1WsP971sbeR"
-							content="im insane! I'm deranged! don't let me near you! I will 
+							content=`im insane! I'm deranged! don't let me near you! I will 
 									kill you! Im mixed race chinese/white, can I say slurs for both or neither?
 									If I rubbed a magic lamp and a genie popped out, I would have a few
 									wishes. One of these wishes would be that league of legends would 
 									never have been created. The next wish would be for all food to taste really good. My last
 									and final wish would be big muscles. oh wait, I already
-									have big muscles."  
+									have big muscles.`  
+						/>
+						
+						<ProjectBlock 
+							heading="Hilarious Website" 
+							window
+							content=`im insane! I'm deranged! don't let me near you! I will 
+									kill you! Im mixed race chinese/white, can I say slurs for both or neither?
+									If I rubbed a magic lamp and a genie popped out, I would have a few
+									wishes. One of these wishes would be that league of legends would 
+									never have been created. The next wish would be for all food to taste really good. My last
+									and final wish would be big muscles. oh wait, I already
+									have big muscles.`  
 						/>
 						
 						<ProjectBlock 
