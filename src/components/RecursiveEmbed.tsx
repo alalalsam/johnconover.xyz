@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from 'grommet';
 
-const RecursiveEmbed: React.FC<{ depth?: number, maxDepth?: number }> = ({ depth = 0, maxDepth =  }) => {
+const RecursiveEmbed: React.FC<{ depth?: number, maxDepth?: number }> = ({ depth = 0, maxDepth = 20 }) => {
 	if (depth >= maxDepth) {
 		return null; // Stop recursion if maxDepth is reached or exceeded
 	}
