@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import { Box } from 'grommet';
 import RecursiveEmbed from './RecursiveEmbed';
 

@@ -168,7 +168,7 @@ const App = () => {
 									running on the 3ds, and this was the first foray into seeing whether or not 
 									that was possible. Currently, the most viable path to universal 3D involves using ML 
 									to predict steroscopic image pairs, then displaying the generated image pair along with 
-									the original with the 3ds gpu stack. I've tested displaying predicted image pairs on 
+									the original using the 3ds gpu stack. I've tested displaying predicted image pairs on 
 									the 3ds, and it works surprisingly well. If you're curious about learning how the 3ds' 3d display  
 									works, this website has a pretty good explanation: https://gbatemp.net/threads/better-stereoscopic-3d-patches-cheat-codes-releases-development-and-discussion.625945/
 									`,
