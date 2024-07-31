@@ -45,7 +45,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, recursiveWindow, p
 						<Route
 							path="/"
 							element={
-								<Box align="center" justify="center" pad="large">
+								<Box align="center" justify="center" fill="horizontal">
 									<RecursiveEmbed />
 								</Box>
 							}
