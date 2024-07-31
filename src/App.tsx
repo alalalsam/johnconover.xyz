@@ -46,9 +46,6 @@ import DancingImage from "./components/DancingEasterEgg";
 import ProjectBlock from "./components/ProjectBlock";
 
 import { BrowserRouter as Router, Route, Routes, useSearchParams } from 'react-router-dom';
-import RecursiveEmbed from './components/RecursiveEmbed'
-import RecursiveComponent from './components/RecursiveComponent'
-
 
 const AppContainer = styled.div`
    position: relative;
@@ -70,27 +67,23 @@ const App = () => {
 
    // Dancing Easteregg
    const [dancing, setDancing] = React.useState(false);
+   
+   const TestComponent: React.FC = () => {
+  return <div>Test Component</div>;
+};
 
    return (
 		<Grommet full theme={theme} themeMode={dark ? "light" : "dark"}>
 			<ToastProvider>
 				{/* <AppContainer> */}
 				
-
-					<Router>
-						<Routes>
-							<Route path="/RecursiveComponent" element={<RecursiveComponent />} />
-							<Route
-								path="/"
-								element={
-									<Box align="center" justify="center" fill="horizontal">
-										<RecursiveEmbed />
-									</Box>
-								}
-							/>
-						</Routes>
-					</Router>
-
+				<Router>
+					<Routes>
+						<Route path="/test" element={<TestComponent />} />
+						
+					</Routes>
+				</Router>
+				
 				
 				<Header
 				   align="center"
