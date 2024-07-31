@@ -38,21 +38,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, recursiveWindow, p
 				{heading}
 				</Heading>
 			
-				{recursiveWindow && (
-					<Router>
-						<Routes>
-							<Route path="/RecursiveComponent" element={<RecursiveComponent />} />
-							<Route
-								path="/"
-								element={
-									<Box align="center" justify="center" fill="horizontal">
-										<RecursiveEmbed />
-									</Box>
-								}
-							/>
-						</Routes>
-					</Router>
-				)}
+
 				
 				{picture && (
 					<Box margin={{ vertical: "small" }}>

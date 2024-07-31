@@ -45,6 +45,11 @@ import TechnologyStack from "./components/TechnologyStack";
 import DancingImage from "./components/DancingEasterEgg";
 import ProjectBlock from "./components/ProjectBlock";
 
+import { BrowserRouter as Router, Route, Routes, useSearchParams } from 'react-router-dom';
+import RecursiveEmbed from './components/RecursiveEmbed'
+import RecursiveComponent from './components/RecursiveComponent'
+
+
 const AppContainer = styled.div`
    position: relative;
 `;
@@ -70,6 +75,22 @@ const App = () => {
 		<Grommet full theme={theme} themeMode={dark ? "light" : "dark"}>
 			<ToastProvider>
 				{/* <AppContainer> */}
+				
+								{recursiveWindow && (
+					<Router>
+						<Routes>
+							<Route path="/RecursiveComponent" element={<RecursiveComponent />} />
+							<Route
+								path="/"
+								element={
+									<Box align="center" justify="center" fill="horizontal">
+										<RecursiveEmbed />
+									</Box>
+								}
+							/>
+						</Routes>
+					</Router>
+				)}
 				
 				<Header
 				   align="center"
