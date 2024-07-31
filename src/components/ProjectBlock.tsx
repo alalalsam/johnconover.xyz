@@ -1,6 +1,6 @@
 import React, {useEffect, useState } from 'react';
 import { Box, Heading, Image, Video, Paragraph } from 'grommet';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import RecursiveComponent from './RecursiveComponent'
 
 interface ProjectBlockProps {
@@ -38,7 +38,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, pict
 				
 				
 				<Router>
-					<Switch>
+					<Routes>
 						<Route path="/recursive-embed">
 							<RecursiveEmbed />
 						</Route>
@@ -47,7 +47,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, pict
 								<RecursiveEmbed />
 							</Box>
 						</Route>
-					</Switch>
+					</Routes>
 				</Router>
 				
 				{showLiveView && (
