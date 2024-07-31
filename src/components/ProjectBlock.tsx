@@ -39,7 +39,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, pict
 				
 				<Router>
 					<Routes>
-						<Route path="/recursive-embed">
+						<Route path="/RecursiveComponent">
 							<RecursiveEmbed />
 						</Route>
 						<Route path="/">
