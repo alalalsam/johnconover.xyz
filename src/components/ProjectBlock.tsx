@@ -2,7 +2,7 @@ import React, {useEffect, useState } from 'react';
 import { Box, Heading, Image, Video, Paragraph } from 'grommet';
 import { BrowserRouter as Router, Route, Routes, useSearchParams } from 'react-router-dom';
 import RecursiveEmbed from './RecursiveEmbed'
-import RecursiveComponent from './RecursiveComponent'
+//import RecursiveComponent from './RecursiveComponent'
 
 interface ProjectBlockProps {
   heading: string;
@@ -39,19 +39,11 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, recursiveWindow, p
 				</Heading>
 			
 				{recursiveWindow && (
-					<Router>
-						<Routes>
-							<Route path="/RecursiveComponent" element={<RecursiveComponent />} />
-							<Route
-								path="/"
-								element={
+
 									<Box align="center" justify="center" fill="horizontal">
 										<RecursiveEmbed />
 									</Box>
-								}
-							/>
-						</Routes>
-					</Router>
+
 				)}
 				
 				{picture && (

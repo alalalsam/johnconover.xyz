@@ -45,7 +45,6 @@ import TechnologyStack from "./components/TechnologyStack";
 import DancingImage from "./components/DancingEasterEgg";
 import ProjectBlock from "./components/ProjectBlock";
 
-import { BrowserRouter as Router, Route, Routes, useSearchParams } from 'react-router-dom';
 
 const AppContainer = styled.div`
    position: relative;
@@ -68,21 +67,11 @@ const App = () => {
    // Dancing Easteregg
    const [dancing, setDancing] = React.useState(false);
    
-   const TestComponent: React.FC = () => {
-  return <div>Test Component</div>;
-};
-
+   
    return (
 		<Grommet full theme={theme} themeMode={dark ? "light" : "dark"}>
 			<ToastProvider>
 				{/* <AppContainer> */}
-				
-				<Router>
-					<Routes>
-						<Route path="/test" element={<TestComponent />} />
-						
-					</Routes>
-				</Router>
 				
 				
 				<Header
