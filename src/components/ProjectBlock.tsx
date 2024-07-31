@@ -1,7 +1,7 @@
 import React, {useEffect, useState } from 'react';
 import { Box, Heading, Image, Video, Paragraph } from 'grommet';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import RecursiveComponent from './RecursiveComponent'
+import RecursiveEmbed from './RecursiveComponent'
 
 interface ProjectBlockProps {
   heading: string;
@@ -50,33 +50,8 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, pict
 					</Routes>
 				</Router>
 				
-				{showLiveView && (
-					<LiveFeed src={"https://johnconover.xyz"} title="Live View" />
-				)}
-				/*
-				{showLiveView && currentUrl && (
-					<Box
-						margin = {{ vertical: "small" }}
-						width="100%"
-						style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}
-					>
-						<iframe
-							src={"https://johnconover.xyz"}
-							frameBorder = "0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowFullScreen
-							style={{
-								position: 'absolute',
-								top: 0,
-								left: 0,
-								width: '100%',
-								height: '100%'
-							}}
-							title="Live View"
-						></iframe>
-					</Box>
-				)}
-				*/
+
+				
 				{picture && (
 					<Box margin={{ vertical: "small" }}>
 						<img src={picture} style={{ maxWidth: '100%'}} />
