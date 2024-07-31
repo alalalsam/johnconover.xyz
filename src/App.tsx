@@ -76,7 +76,7 @@ const App = () => {
 			<ToastProvider>
 				{/* <AppContainer> */}
 				
-								{recursiveWindow && (
+
 					<Router>
 						<Routes>
 							<Route path="/RecursiveComponent" element={<RecursiveComponent />} />
@@ -90,7 +90,7 @@ const App = () => {
 							/>
 						</Routes>
 					</Router>
-				)}
+
 				
 				<Header
 				   align="center"
