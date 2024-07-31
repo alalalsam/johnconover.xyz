@@ -1,24 +1,26 @@
 import React, {useEffect, useState } from 'react';
 import { Box, Heading, Image, Video, Paragraph } from 'grommet';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import RecursiveEmbed from './RecursiveComponent'
+import { BrowserRouter as Router, Route, Routes, useSearchParams } from 'react-router-dom';
+import RecursiveEmbed from './RecursiveEmbed'
+import RecursiveComponent from './RecursiveComponent'
 
 interface ProjectBlockProps {
   heading: string;
-  showLiveView?: boolean;
+  recursiveWindow?: boolean;
   picture?: string;
   video?: string;
   content: string | string[];
 }
 
-const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, picture, video, content }) => {
-	const [currentUrl, setCurrentUrl] = useState('');
+const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, recursiveWindow, picture, video, content }) => {
+
 	
 	useEffect(() => {
-		if(showLiveView){
-			setCurrentUrl(window.location.href);
+		if(recursiveWindow){
+			//setCurrentUrl(window.location.href);
+			//I want to control the display of the recursive window here
 		}
-	}, [showLiveView]);
+	}, [recursiveWindow]);
 
 	return (
 		<Box
@@ -35,22 +37,23 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, showLiveView, pict
 				>
 				{heading}
 				</Heading>
-				
+			
 				
 				<Router>
 					<Routes>
-						<Route path="/RecursiveComponent">
-							<RecursiveEmbed />
-						</Route>
-						<Route path="/">
-							<Box align="center" justify="center" pad="large">
-								<RecursiveEmbed />
-							</Box>
-						</Route>
+						<Route path="/RecursiveComponent" element={<RecursiveComponent />} />
+						<Route
+							path="/"
+							element={
+								{recursiveWindow && (
+									<Box align="center" justify="center" pad="large">
+										<RecursiveEmbed />
+									</Box>
+								)}
+							}
+						/>
 					</Routes>
 				</Router>
-				
-
 				
 				{picture && (
 					<Box margin={{ vertical: "small" }}>

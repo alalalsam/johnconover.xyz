@@ -1,16 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route, useSearchParams } from 'react-router-dom';
 import { Box } from 'grommet';
+import RecursiveEmbed from './RecursiveEmbed';
 
-const RecursiveEmbed: React.FC = () => {
-  return (
-    <Box pad="medium" border={{ color: 'brand', size: 'small' }} overflow="hidden">
-      <iframe
-        src="https://johnconover.com"  // Adjust this if needed to match the route or URL
-        style={{ width: '100%', height: '100%', border: 'none' }}
-        title="Recursive Embed"
-      />
-    </Box>
-  );
-};
+const RecursiveComponent: React.FC = () => {
+  const [searchParams] = useSearchParams();
+  const depth = parseInt(searchParams.get('depth') || '0', 10);
+  const maxDepth = parseInt(searchParams.get('maxDepth') || '3', 10);
 
-export default RecursiveEmbed;
+  return <RecursiveEmbed depth={depth} maxDepth={maxDepth} />;
+  
+}
+  
+export default RecursiveComponent;
