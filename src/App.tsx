@@ -46,9 +46,12 @@ import DancingImage from "./components/DancingEasterEgg";
 import ProjectBlock from "./components/ProjectBlock";
 
 
+
+
 const AppContainer = styled.div`
    position: relative;
 `;
+
 
 const App = () => {
    const [contactSevan, setContactSevan] = React.useState(false);
@@ -67,12 +70,15 @@ const App = () => {
    // Dancing Easteregg
    const [dancing, setDancing] = React.useState(false);
    
+
+
    
    return (
 		<Grommet full theme={theme} themeMode={dark ? "light" : "dark"}>
 			<ToastProvider>
 				{/* <AppContainer> */}
 				
+			
 				
 				<Header
 				   align="center"

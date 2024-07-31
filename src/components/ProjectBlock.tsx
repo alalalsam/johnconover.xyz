@@ -1,8 +1,6 @@
 import React, {useEffect, useState } from 'react';
 import { Box, Heading, Image, Video, Paragraph } from 'grommet';
-import { BrowserRouter as Router, Route, Routes, useSearchParams } from 'react-router-dom';
-import RecursiveEmbed from './RecursiveEmbed'
-//import RecursiveComponent from './RecursiveComponent'
+import RecursiveEmbed from './RecursiveEmbed';
 
 interface ProjectBlockProps {
   heading: string;
@@ -13,14 +11,6 @@ interface ProjectBlockProps {
 }
 
 const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, recursiveWindow, picture, video, content }) => {
-
-	
-	useEffect(() => {
-		if(recursiveWindow){
-			//setCurrentUrl(window.location.href);
-			//I want to control the display of the recursive window here
-		}
-	}, [recursiveWindow]);
 
 	return (
 		<Box
@@ -39,11 +29,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, recursiveWindow, p
 				</Heading>
 			
 				{recursiveWindow && (
-
-									<Box align="center" justify="center" fill="horizontal">
-										<RecursiveEmbed />
-									</Box>
-
+					<RecursiveEmbed />
 				)}
 				
 				{picture && (
