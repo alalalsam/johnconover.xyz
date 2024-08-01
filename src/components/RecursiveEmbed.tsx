@@ -12,7 +12,7 @@ const RecursiveEmbed: React.FC<{ depth?: number, maxDepth?: number }> = ({ depth
 		return (
 		<Box style={{ width: '780px', height: '400px' }} pad="medium" border={{ color: 'brand', size: 'small' }} overflow="hidden">
 			<iframe
-				src={`https://johnconover.xyz?depth=${depth + 1}&maxDepth=${maxDepth}`}
+				src={"https://johnconover.xyz?depth=${depth + 1}&maxDepth=${maxDepth}"}
 				style={{ width: '100%', height: '100%', border: 'none' }}
 				title="Recursive Embed"
 			/>

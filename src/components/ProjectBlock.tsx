@@ -47,7 +47,6 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, recursiveWindow, p
 						<iframe 
 							src={video} 
 							frameBorder="0" 
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 							allowFullScreen 
 							style={{
 								position: 'absolute',
