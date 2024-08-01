@@ -256,7 +256,7 @@ const App = () => {
 									is if I put in the wrong url, then the Netlify 404 page has a link
 									to take you back to this website, but even then it stops rendering 
 									all embeds like 10 layers deep. Huge thanks to Sevan Evans for providing 
-									me a Node.js package to build off of.`}  
+									me a Node.js example to build off of.`}  
 						/>
 						
 						<ProjectBlock 
