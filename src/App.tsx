@@ -163,10 +163,8 @@ const App = () => {
 								color="text-paragraph"
 								style={{ maxWidth: '100%' }}
 							>
-								The Febreeze air freshener company and the scented candle industry are rife with strife and drama this saturday afternoon. After months of litigation and "political donations" intended 
-								to maximize market capital and quash competition, new information has come to light about the secret, sinister interests of the scent product industry.
-								Every single politically motivated action on both of these companies' behalf were sent to the same politician, an up-and-coming 24 year old hottie named Jasmine. As it turns out, both 
-								executive boards of Febreeze and other scented candlemaking companies used their competition to mask the courting of Jasmine, who at this point in litigation has come out as lesbian.
+								Here's a couple projects I've worked on for fun or otherwise. I tried to order them from least to most
+								unhinged, so don't scroll down too far if you're just here to evaluate my talents.
 							</Paragraph>
 						</Box>
 
@@ -225,47 +223,68 @@ const App = () => {
 						/>
 						
 						<ProjectBlock 
-							heading="Chinese" 
-							video="https://www.youtube.com/embed/Je4tujqKkMc?si=uaf9h1WsP971sbeR"
-							content={`im insane! I'm deranged! don't let me near you! I will 
-									kill you! Im mixed race chinese/white, can I say slurs for both or neither?
-									If I rubbed a magic lamp and a genie popped out, I would have a few
-									wishes. One of these wishes would be that league of legends would 
-									never have been created. The next wish would be for all food to taste really good. My last
-									and final wish would be big muscles. oh wait, I already
-									have big muscles.`}  
+							heading="Robotic Robot" 
+							video="https://www.youtube.com/embed/8rsJ4EK5T5A?si=zn7XlyMivoR2mHAf"
+							content={[`In high school I participated in FIRST robotics competition, and this is the robot 
+									we made during my senior year. At this point our team was working out of 2 garages 
+									and a shipping container, and we had barely 10-ish people on the team that were 
+									actually useful. I was in charge of building all the electronics and pneumatics, 
+									and everyone else did everything else. This was also the first year we had 2 
+									working robots in time for competition (1 for competition and 1 for practice,)
+									which was frankly astounding given our circumstances.`,
+									`When this bot was designed, the designer didn't designate any space for electronics,
+									so I ended up cutting our control systems in half, zip-typing them to the sides of the bot,
+									and routing all our wires through the bottom, making sure they don't get snagged 
+									on any belts, gears, motors or gamepieces they might come very close to. This was 
+									especially challenging because our driver was a crazed maniac who filled his days and nights
+									with vyvanse-fueled ranked overwatch gameplay, and we encouraged him. One competition
+									our team swapped out the wheels on the bot so that he could ram into other people 
+									with more force. It was hilarious to watch, but I had to make sure the lengths 
+									and tolerances of my wiring could endure tons of violence before they failed.`]}  
 						/>
 						
 						<ProjectBlock 
 							heading="Hilarious Website" 
 							recursiveWindow={true}
-							content={`im insane! I'm deranged! don't let me near you! I will 
-									kill you! Im mixed race chinese/white, can I say slurs for both or neither?
-									If I rubbed a magic lamp and a genie popped out, I would have a few
-									wishes. One of these wishes would be that league of legends would 
-									never have been created. The next wish would be for all food to taste really good. My last
-									and final wish would be big muscles. oh wait, I already
-									have big muscles.`}  
+							content={`I'm pretty mad because whoever implemented the web stack at 
+									Netlify made it so that you can't display your own website from 
+									within an Iframe more than once. This section was supposed to be 
+									a funny joke where I tell you you can't scroll any further until 
+									you scroll down all the way in the website window, and then it would 
+									trap you into a recursive loop where you have to keep scrolling 
+									for like 50 layers deep of this website. The closest I can get 
+									is if I put in the wrong url, then the Netlify 404 page has a link
+									to take you back to this website, but even then it stops rendering 
+									all embeds like 10 layers deep. `}  
 						/>
 						
 						<ProjectBlock 
-							heading="Chinese" 
-							picture="https://www.uschina.org/sites/default/files/202210/xijinping.jpg"
-							content="Chinese Chinese Chinese, anything goes, even Chinese"
+							heading="Shrek Can Feel Your Heart Beating" 
+							video="https://www.youtube.com/embed/wUvs6uQ3bXE?si=fj_UPsB4YRjiMH-P"
+							content={`Here's a project I was forced to do at gunpoint during my time 
+									at the University. This is a MSP430 that takes an input ECG 
+									signal on 2 pins, then isolates and displays the signal on the 
+									display. Later on in my instruction we hooked up electrodes to 
+									our makeshift cardiographs and measured our own heart rate, which was 
+									cool. I had to encode and display a random picture on the 
+									screen too, to prove to my overseers that I could understand how 
+									displays work at a low level. `}
 						/>
 						
 						<ProjectBlock
 							heading="Gun"
 							picture="/projectPhotos/gun.JPG"
-							content="     I was bored in engineering class one day, so I went into our 
+							content={`I was bored in engineering class one day, so I went into our 
 									shipping container full of trash, and made this gun out of garbage.
 									It uses a cannibalized power drill to power a compressor, which 
 									builds pressure. It then uses a solenoid to dump that pressure. 
 									Unfortunately, the solenoids we had couldn't dump all pressure
 									at once, and the valves we had that could were already being used
 									by more useful projects, so the gun couldn't hurt anyone unless you
-									hit them with it. It ended up being used for
-									testing which pistons in our shipping container full of trash worked."
+									hit them with it. Kicking my fellow classmates was easier and 
+									more effective anyways, so it ended up being used for
+									testing which pistons in our shipping container full of trash worked
+									instead of putting me in prison.`}
 						/>
 						
 					</PageContent>
