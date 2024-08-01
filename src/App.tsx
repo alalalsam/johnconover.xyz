@@ -213,7 +213,7 @@ const App = () => {
 									would be missing, and the rightmost would be full of noise. Initially, 
 									I thought this was an issue with which address my 
 									code was reading from, but that wasn't the case.
-									what was happening was that whenever the left stereoscopic image pair was written
+									What was happening was that whenever the left stereoscopic image pair was written
 									to cache, the dummy variables used during that operation were located in the addresses
 									directly after the first screenshot's location, which overwrote the start of 
 									the second screenshot. To fix this, I allocated an extra
@@ -230,9 +230,9 @@ const App = () => {
 									and a shipping container, and we had barely 10-ish people on the team that were 
 									actually useful. I was in charge of building all the electronics and pneumatics, 
 									and everyone else did everything else. This was also the first year we had 2 
-									working robots in time for competition (1 for competition and 1 for practice,)
+									working robots in time for competition (1 for competition and 1 for practice),
 									which was frankly astounding given our circumstances.`,
-									`When this bot was designed, the designer didn't designate any space for electronics,
+									`When this bot was designed the designer didn't designate any space for electronics
 									so I ended up cutting our control systems in half, zip-typing them to the sides of the bot,
 									and routing all our wires through the bottom, making sure they don't get snagged 
 									on any belts, gears, motors or gamepieces they might come very close to. This was 
@@ -249,8 +249,8 @@ const App = () => {
 							content={`I'm pretty mad because whoever implemented the web stack at 
 									Netlify made it so that you can't display your own website from 
 									within an Iframe more than once. This section was supposed to be 
-									a funny joke where I tell you you can't scroll any further until 
-									you scroll down all the way in the website window, and then it would 
+									a funny joke where I tell you "you can't scroll any further until 
+									you scroll down all the way in the website window," and then it would 
 									trap you into a recursive loop where you have to keep scrolling 
 									for like 50 layers deep of this website. The closest I can get 
 									is if I put in the wrong url, then the Netlify 404 page has a link
@@ -275,15 +275,16 @@ const App = () => {
 							heading="Gun"
 							picture="/projectPhotos/gun.JPG"
 							content={`I was bored in engineering class one day, so I went into our 
-									shipping container full of trash, and made this gun out of garbage.
-									It uses a cannibalized power drill to power a compressor, which 
+									shipping container full of trash and made this gun out of garbage.
+									It uses a cannibalized power drill to power a compressor which 
 									builds pressure. It then uses a solenoid to dump that pressure. 
 									Unfortunately, the solenoids we had couldn't dump all pressure
-									at once, and the valves we had that could were already being used
+									at once and the valves we had that could were already being used
 									by more useful projects, so the gun couldn't hurt anyone unless you
 									hit them with it. Kicking my fellow classmates was easier and 
-									more effective anyways, so it ended up being used for
-									testing which pistons in our shipping container full of trash worked.`}
+									more effective anyways so it ended up being used for
+									testing which pistons in our shipping container full of trash worked.
+									Unlucky!`}
 						/>
 						
 						<ProjectBlock
