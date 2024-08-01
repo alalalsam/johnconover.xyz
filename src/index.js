@@ -4,13 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.hydrateRoot(document.getElementById('root'));
+import { renderToString } from "react-dom/server";
 
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const rootString = renderToString(<App />);
+
+
+const rootElement = document.getElementById("root");
+rootElement.innerHTML = rootString;
+
+const root = ReactDOM.hydrateRoot(rootElement, <App />);
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
