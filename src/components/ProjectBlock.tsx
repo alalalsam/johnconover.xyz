@@ -1,13 +1,14 @@
 import React, {useEffect, useState } from 'react';
 import { Box, Heading, Image, Video, Paragraph } from 'grommet';
 import RecursiveEmbed from './RecursiveEmbed';
+import ReactMarkdown from 'react-markdown';
 
 interface ProjectBlockProps {
   heading: string;
   recursiveWindow?: boolean;
   picture?: string;
   video?: string;
-  content: string | string[];
+  content?: string | string[];
 }
 
 const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, recursiveWindow, picture, video, content }) => {
@@ -16,9 +17,9 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, recursiveWindow, p
 		<Box
 			align="center"
 			justify="center"
-			margin={{ top: "small" }}
-			border={{ color: "active-background", side: "top", size: "small" }}
-			gap="medium"
+			margin={{ top: "large" }}
+			border={{ color: "active-background", side: "top", size: "medium" }}
+			gap="large"
 		>
 			<Box align="start" justify="center" fill="horizontal">
 				<Heading
@@ -69,7 +70,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({ heading, recursiveWindow, p
 							fill
 							color="text-paragraph"
 						>
-							{paragraph}
+						<ReactMarkdown>{paragraph}</ReactMarkdown>
 						</Paragraph>
 					))
 				) : (

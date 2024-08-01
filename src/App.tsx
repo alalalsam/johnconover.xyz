@@ -176,8 +176,8 @@ const App = () => {
 									that was possible. Currently, the most viable path to universal 3D involves using ML 
 									to predict steroscopic image pairs, then displaying the generated image pair along with 
 									the original using the 3ds gpu stack. I've tested displaying predicted image pairs on 
-									the 3ds, and it works surprisingly well. If you're curious about learning how the 3ds' 3d display  
-									works, this website has a pretty good explanation: https://gbatemp.net/threads/better-stereoscopic-3d-patches-cheat-codes-releases-development-and-discussion.625945/
+									the 3ds, and it works surprisingly well. If you're curious about learning how the 3ds' 3d display works, the website [here](https://gbatemp.net/threads/better-stereoscopic-3d-patches-cheat-codes-releases-development-and-discussion.625945/) 
+									has a pretty good explanation
 									`,
 									`Anyways, for this project I used TVM to cross-compile the MLPerf Tiny Visual Wake Words
 									model for inference on the 3ds, with some help from a tutorial on the TVM website. 
@@ -283,8 +283,11 @@ const App = () => {
 									by more useful projects, so the gun couldn't hurt anyone unless you
 									hit them with it. Kicking my fellow classmates was easier and 
 									more effective anyways, so it ended up being used for
-									testing which pistons in our shipping container full of trash worked
-									instead of putting me in prison.`}
+									testing which pistons in our shipping container full of trash worked.`}
+						/>
+						
+						<ProjectBlock
+							heading="The End"
 						/>
 						
 					</PageContent>
