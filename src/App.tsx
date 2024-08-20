@@ -127,7 +127,7 @@ const App = () => {
 									  overflow="hidden"
 									  round="full"
 									  size="2xl"
-									  src="https://cdn.britannica.com/68/178268-050-5B4E7FB6/Tom-Cruise-2013.jpg"
+									  src="/projectphotos/gucker.png"
 									/>
 									
 									<Box align="start" justify="start" fill>
