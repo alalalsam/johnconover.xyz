@@ -282,8 +282,8 @@ const App = () => {
 									Unfortunately, the solenoids we had couldn't dump all pressure
 									at once and the valves we had that could were already being used
 									by more useful projects, so the gun couldn't hurt anyone unless you
-									hit them with it. Kicking my fellow classmates was easier and 
-									more effective anyways so it ended up being used for
+									hit them with it. We had a couple plastic lightsabers for that anyways
+									so it ended up being used for
 									testing which pistons in our shipping container full of trash worked.
 									Unlucky!`}
 						/>
