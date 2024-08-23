@@ -164,7 +164,7 @@ const App = () => {
 								style={{ maxWidth: '100%' }}
 							>
 								Here's a couple projects I've worked on for fun or otherwise. I tried to order them from least to most
-								unhinged, so don't scroll down too far if you're just here to evaluate my talents.
+								unhinged.
 							</Paragraph>
 						</Box>
 
