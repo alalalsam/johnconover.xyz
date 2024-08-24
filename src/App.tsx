@@ -289,6 +289,17 @@ const App = () => {
 						/>
 						
 						<ProjectBlock
+							heading="Miscellaneous Projects"
+							content={`I've done many more projects than are listed on this site, but 
+									I don't have any documentation for most of them. Some of the more
+									noteable ones include developing ADD, SUB, and MULT subroutines to 
+									a 16-bit arithmetic logic unit on an FPGA, developing a complete 
+									recreation of the dice game Yahtzee with JavaScript, building the 
+									world's worst t-shirt cannon, building the world's best popsicle 
+									stick bridge, and developing firmware for a makeshift 6-DOF arm. `}
+						/>
+						
+						<ProjectBlock
 							heading="The End"
 						/>
 						
