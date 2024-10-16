@@ -145,7 +145,9 @@ const App = () => {
 										
 									</Box>
 									
+									{ !isMobile && (
 									<ContactGrid setContactSevan={setContactSevan} />
+									)}
 								
 								</Box>
 								
@@ -155,6 +157,10 @@ const App = () => {
 					 
 						</Box>
 
+						{ isMobile && (
+							<ContactGrid setContactSevan={setContactSevan} />
+						)}
+						
 						<Box align="start" justify="between" wrap direction="row" gap="small" style={{ maxWidth: '100%' }}>
 							<Paragraph
 								size="large"
@@ -182,16 +188,15 @@ const App = () => {
 									`Anyways, for this project I used TVM to cross-compile the MLPerf Tiny Visual Wake Words
 									model for inference on the 3ds, with some help from a tutorial on the TVM website. 
 									Since the 3ds homebrew development environment is literally hacky, completing this 
-									project taught me a lot about what exactly is involved in running applications on 
-									different platforms. `]}
+									project taught me a lot about kernel development on custom hardware systems. `]}
 						/>
 					
 						<ProjectBlock 
 							heading="Coapt Internship Project" 
 							picture="/projectphotos/coaptproj.png"
 							content={`At Coapt, I had to evaluate proof-of-concept for a low power bluetooth device.
-									When I got there, the device wasn't running to spec, so I was put in charge of writing 
-									drivers for one of the components they swapped out on the device. This was my first exposure
+									When I got there, the device wasn't running to spec, so I was put in charge of integrating 
+									a new IMU, then programming low-power features until they were satisfied. This was my first exposure
 									to embedded systems and using C extensively, so it took me a little while to get into the 
 									swing of things. Once I got comfortable coding though, I implemented their requested functionality, 
 									and even threw together a couple test scripts that I could flash onto the device to make 
@@ -302,7 +307,7 @@ const App = () => {
 						<ProjectBlock
 							heading="The End"
 						/>
-						
+
 					</PageContent>
 					{contactSevan && <ContactLayer setContactSevan={setContactSevan} />}
 					{locationDrop && (
