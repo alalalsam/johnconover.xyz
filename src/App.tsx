@@ -158,9 +158,11 @@ const App = () => {
 						</Box>
 
 						{ isMobile && (
-							<Box align="start" justify="start" fill>
+							<Box align="start" justify="center" gap="medium" wrap>
+								<Box align="start" justify="start" fill>
+								</Box>
+								<ContactGrid setContactSevan={setContactSevan} />
 							</Box>
-							<ContactGrid setContactSevan={setContactSevan} />
 						)}
 						
 						<Box align="start" justify="between" wrap direction="row" gap="small" style={{ maxWidth: '100%' }}>
