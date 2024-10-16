@@ -158,6 +158,8 @@ const App = () => {
 						</Box>
 
 						{ isMobile && (
+							<Box align="start" justify="start" fill>
+							</Box>
 							<ContactGrid setContactSevan={setContactSevan} />
 						)}
 						
