@@ -197,8 +197,8 @@ const App = () => {
 									lots of mathematical operations concurrently, I probably won't be able to leverage the 3ds
 									GPU for machine learning, since it's already very busy rendering 5 different framebuffers
 									(2 switching framebuffers for the left perspective, 2 for the right, and 1 for the bottom screen).
-									Fortunately, the upgraded (new) 3ds model has 2 extra CPU cores that may or may not be used depending on 
-									the application.`]}
+									Fortunately, the upgraded (new) 3ds model has 2 extra CPU cores that I can leverage for my 
+									purposes.`]}
 						/>
 					
 						<ProjectBlock 
