@@ -78,8 +78,6 @@ const App = () => {
 			<ToastProvider>
 				{/* <AppContainer> */}
 				
-			
-				
 				<Header
 				   align="center"
 				   direction="row"
@@ -177,7 +175,8 @@ const App = () => {
 								unhinged.
 							</Paragraph>
 						</Box>
-
+					
+						
 						<ProjectBlock 
 							heading="MLPerf Tiny inference on 3ds" 
 							video="https://www.youtube.com/embed/OHeZvUHVpf4?si=Yt5bs96ExDIlWa_v"
@@ -185,14 +184,21 @@ const App = () => {
 									running on the 3ds, and this was the first foray into seeing whether or not 
 									that was possible. Currently, the most viable path to universal 3D involves using ML 
 									to predict steroscopic image pairs, then displaying the generated image pair along with 
-									the original using the 3ds gpu stack. I've tested displaying predicted image pairs on 
+									the original. I've tested displaying predicted image pairs on 
 									the 3ds, and it works surprisingly well. If you're curious about learning how the 3ds' 3d display works, the website [here](https://gbatemp.net/threads/better-stereoscopic-3d-patches-cheat-codes-releases-development-and-discussion.625945/) 
 									has a pretty good explanation
 									`,
 									`Anyways, for this project I used TVM to cross-compile the MLPerf Tiny Visual Wake Words
 									model for inference on the 3ds, with some help from a tutorial on the TVM website. 
 									Since the 3ds homebrew development environment is literally hacky, completing this 
-									project taught me a lot about kernel development on custom hardware systems. `]}
+									project taught me a lot about kernel development on custom hardware systems. `,
+									
+									`While GPUs are generally used for machine-learning operations because they can perform
+									lots of mathematical operations concurrently, I probably won't be able to leverage the 3ds
+									GPU for machine learning, since it's already very busy rendering 5 different framebuffers
+									(2 switching framebuffers for the left perspective, 2 for the right, and 1 for the bottom screen).
+									Fortunately, the upgraded (new) 3ds model has 2 extra CPU cores that may or may not be used depending on 
+									the application.`]}
 						/>
 					
 						<ProjectBlock 
@@ -217,8 +223,9 @@ const App = () => {
 									2 weeks working on a multithreading implementation to write the screenshots
 									in a way that wouldn't interrupt gameplay.
 									`,  
-									`Employing multithreading wasn't 
-									too difficult, but I had an issue where, for one of my image pairs, the leftmost column of pixels 
+									`Employing multithreading wasn't too difficult (since I wasn't 
+									building the functionality from scratch), but I had an issue where, for 
+									one of my image pairs, the leftmost column of pixels 
 									would be missing, and the rightmost would be full of noise. Initially, 
 									I thought this was an issue with which address my 
 									code was reading from, but that wasn't the case.
