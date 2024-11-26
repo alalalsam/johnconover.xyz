@@ -26,7 +26,8 @@ export const projects = [
       period: "November 2024 - Present",
 	  techStack: [ ],
       img: "https://lh3.googleusercontent.com/p/AF1QipMYwSw-K1DaGAUTL-Y_iwHHxbUfC0ULk0NnBxwU=s1360-w1360-h1020",
-      description: `Wrote fimware for smart safes and cash recyclers.`,
+      description: `Implemented encryption, communication, flash, random number generation, security features, and other firmware-level
+	  operations for smart safes and cash recyclers.`,
    },
    {
       name: "Coapt: Myo Pattern Recognition",
