@@ -150,7 +150,7 @@ const SelectLayer = ({ project, setSelectedProject }) => {
       >
          <Box flex="grow" overflow="auto">
             <Box align="start" justify="center" width="medium" pad="medium">
-               <Image width="32px" height="32px" src={project.img}></Image>
+               <Image width="128px" height="128px" src={project.img}></Image>
                <Heading>{project.name}</Heading>
             </Box>
             <Box align="start" justify="between" gap="medium" overflow="auto" flex="grow">
