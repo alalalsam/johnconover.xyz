@@ -176,6 +176,13 @@ const App = () => {
 							</Paragraph>
 						</Box>
 					
+					
+					
+						<ProjectBlock 
+							heading="Yummy beef for stupid rainy" 
+							picture = "projectphotos/bellington.jpg"
+							content={[`heres the beef wellington i made you'ere welkcom`]}
+						/>
 						
 						<ProjectBlock 
 							heading="MLPerf Tiny inference on 3ds" 
