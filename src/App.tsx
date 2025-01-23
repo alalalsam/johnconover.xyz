@@ -202,7 +202,9 @@ const App = () => {
 									`While GPUs are generally used for machine-learning operations because they can perform
 									lots of mathematical operations concurrently, I probably won't be able to leverage the 3ds
 									GPU for machine learning, since it's already very busy rendering 5 different framebuffers
-									(2 switching framebuffers for the left perspective, 2 for the right, and 1 for the bottom screen).
+									(2 switching framebuffers for the left perspective, 2 for the right, and 1 for the bottom screen), and
+									also probably more importantly that would require me to reimplement machine-learning algorithms 
+									from the ground up in assembly.
 									Fortunately, the upgraded (new) 3ds model has 2 extra CPU cores that I can leverage for my 
 									purposes.`]}
 						/>
