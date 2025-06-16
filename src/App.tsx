@@ -223,7 +223,7 @@ const App = () => {
 						<ProjectBlock 
 							heading="3ds Dataset Building Utility" 
 							video="https://www.youtube.com/embed/y00-irguHc4?si=Oef4jmxugdEvjqEv"
-							content={[ `This is a homebrew 3ds program that I'm using to make me a machine learning
+							content={[ `This is a homebrew 3ds program that I was using to make me a machine learning
 									dataset. It employs multithreading to collect stereoscopic 3D image pairs every few seconds.
 									Initially, I had a working version in 2 days, but this version would freeze gameplay for a quarter second
 									every time It saved the screenshot to memory. I hated this a lot, so I spent
@@ -233,7 +233,7 @@ const App = () => {
 									`Employing multithreading wasn't too difficult (since I wasn't 
 									building the functionality from scratch), but I had an issue where, for 
 									one of my image pairs, the leftmost column of pixels 
-									would be missing, and the rightmost would be full of noise. Initially, 
+									would be missing, and the rightmost would be full of random colors. Initially, 
 									I thought this was an issue with which address my 
 									code was reading from, but that wasn't the case.
 									What was happening was that whenever the left stereoscopic image pair was written
