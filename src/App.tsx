@@ -178,35 +178,34 @@ const App = () => {
 					
 					
 						<ProjectBlock 
-							heading="Yummy beef for stupid rainy" 
-							picture = "projectphotos/bellington.jpg"
-							content={[`heres the beef wellington i made you'ere welkcom`]}
+							heading="Butter Basted Steak" 
+							picture = "projectphotos/butterBastedSteak.jpg"
+							content={[`Steak I cooked the other day. It was really good.`]}
 						/>
 						
 						<ProjectBlock 
 							heading="MLPerf Tiny inference on 3ds" 
 							video="https://www.youtube.com/embed/OHeZvUHVpf4?si=Yt5bs96ExDIlWa_v"
-							content={[`I'm currently developing universal 3d-mode support for any application 
-									running on the 3ds, and this was the first foray into seeing whether or not 
-									that was possible. Currently, the most viable path to universal 3D involves using ML 
-									to predict steroscopic image pairs, then displaying the generated image pair along with 
-									the original. I've tested displaying predicted image pairs on 
-									the 3ds, and it works surprisingly well. If you're curious about learning how the 3ds' 3d display works, the website [here](https://gbatemp.net/threads/better-stereoscopic-3d-patches-cheat-codes-releases-development-and-discussion.625945/) 
+							content={[`I was developing universal 3d-mode support for any application 
+									running on the Nintendo 3ds, and this was the first foray into seeing whether or not 
+									that was possible. It isn't, mostly. The most viable path to universal 3D involves using ML 
+									to predict steroscopic image pairs, then injecting the generated image pair into the 3ds 
+									framebuffer. As it turns out, Nvidia already does this with their GPU's, as a feature
+									paired with DLSS. I tried Nvidia's frame generation stuff since I recently got a 5080, and 
+									I hate it because it causes a wierd ghosting effect for ui or stationary elements in games.
+									Predicting stereoscopic image pairs instead of next-frames would make this effect WAY worse,
+									ESPECIALLY since it would be running on mobile hardware from 2005. I did do some PoC using 
+									ML-generated stereoscopic 3d image pairs to see if they gave the 3d-effect, and that actually worked 
+									pretty well.`,
+ 									
+									`If you're curious about learning how the 3ds' 3d display works, the website [here](https://gbatemp.net/threads/better-stereoscopic-3d-patches-cheat-codes-releases-development-and-discussion.625945/) 
 									has a pretty good explanation
 									`,
-									`Anyways, for this project I used TVM to cross-compile the MLPerf Tiny Visual Wake Words
-									model for inference on the 3ds, with some help from a tutorial on the TVM website. 
-									Since the 3ds homebrew development environment is literally hacky, completing this 
-									project taught me a lot about kernel development on custom hardware systems. `,
-									
-									`While GPUs are generally used for machine-learning operations because they can perform
-									lots of mathematical operations concurrently, I probably won't be able to leverage the 3ds
-									GPU for machine learning, since it's already very busy rendering 5 different framebuffers
-									(2 switching framebuffers for the left perspective, 2 for the right, and 1 for the bottom screen), and
-									also probably more importantly that would require me to reimplement machine-learning algorithms 
-									from the ground up in assembly.
-									Fortunately, the upgraded (new) 3ds model has 2 extra CPU cores that I can leverage for my 
-									purposes.`]}
+									`Anyways, I used TVM to cross-compile the MLPerf Tiny Visual Wake Words
+									model for inference on the 3ds, with some help from a tutorial on the TVM website.
+									That's what the video's showing. I learned a lot about compiler workflows and cross-compilation
+									from this part of the project. `
+									]}
 						/>
 					
 						<ProjectBlock 
