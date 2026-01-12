@@ -186,9 +186,9 @@ const App = () => {
 									with application engineers in Spain, and implementing encrypted communications for a fully featured 
 									I/O-power-distribution-hardware-interface-type board. The above photo details one such project,
 									a microprocessor (imx6 variant I think??) breadboarded out to assist in writing firmware for a 
-									board that doesn't exist yet.
+									board that doesn't exist yet.`,
 									
-									I wouldn't consider the featured project here more or less impressive than anything else 
+									`I wouldn't consider the featured project here more or less impressive than anything else 
 									I've done at my current job, but it was very hands-on, which I liked. Also, it gave me
 									the opportunity to really understand how bring-up is done on a brand new microprocessor.
 									Seeing how the functionality of the microprocessor is mapped out onto the pins and how 
