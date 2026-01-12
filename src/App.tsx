@@ -257,10 +257,10 @@ const App = () => {
 									I thought this was an issue with which address my 
 									code was reading from, but that wasn't the case.
 									What was happening was that whenever the left stereoscopic image pair was written
-									to cache, the dummy variables used during that operation were located in the addresses
+									to (OS) cache, the dummy variables used during that operation were located in the addresses
 									directly after the first screenshot's location, which overwrote the start of 
 									the second screenshot. To fix this, I allocated an extra
-									column of pixels in cache, and offset the writing of the right image pair by that column.
+									column of pixels in (OS) cache, and offset the writing of the right image pair by that column.
 									The extra column I allocated would then be filled with the dummy values, and the 
 									right view's data would remain untouched.`]}
 						/>
