@@ -26,8 +26,8 @@ export const projects = [
       period: "November 2024 - Present",
 	  techStack: [ ],
       img: "https://lh3.googleusercontent.com/p/AF1QipMYwSw-K1DaGAUTL-Y_iwHHxbUfC0ULk0NnBxwU=s1360-w1360-h1020",
-      description: `Implemented encryption, communication, flash, random number generation, security features, and other firmware-level
-	  operations for smart safes and cash recyclers.`,
+      description: `Implemented numerous firware features from baremetal bit-banged paralell interfaces to custom linux kernel customization and deployment. Additional responsibilities
+					included support on production line issues, customer-reported firmware bugs, and R&D on the next generation of flagship products.`,
    },
    {
       name: "Coapt: Myo Pattern Recognition",
@@ -35,7 +35,7 @@ export const projects = [
       roles: [{ name: "Firmware Intern", color: { color: "firmware-intern", opacity: "strong" } }],
       period: "August 2022 - May 2023",
 	  techStack: [ ],
-      img: "https://media.licdn.com/dms/image/C4D0BAQGpl0eFXCA9bQ/company-logo_200_200/0/1630525128114/coapt_logo?e=2147483647&v=beta&t=a_n3bdXuvVfmuJyF0R67UPsod9Omocb0AYLTFCXhe0I",
+      img: "https://media.licdn.com/dms/image/v2/C4D0BAQGpl0eFXCA9bQ/company-logo_200_200/company-logo_200_200/0/1630525128114/coapt_logo?e=2147483647&v=beta&t=xwoBgAMt5te-gfKC2a3pR1kfSWiiMZhg35oA1cTFjTo",
       description: `Spearheaded research, schematic revision, hardware testing, and firmware development for a prototype low-power PCB module. 
 					Successfully decreased system power draw by 2 orders of magnitude.`,
    },
