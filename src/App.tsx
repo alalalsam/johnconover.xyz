@@ -178,23 +178,15 @@ const App = () => {
 					
 					
 						<ProjectBlock 
-							heading="Microprocessor Prototype Breadboard" 
-							picture = "projectphotos/prototype.jpg"
-							content={[`I've done a lot of interesting work at my latest position, like developing a custom Linux 
-									distribution for an embedded platform, exploring custom bootloader designs for supporting Linux 
-									and Windows Compact Embedded, going to work early (ugh) to coordinate building prototype show units
-									with application engineers in Spain, and implementing encrypted communications for a fully featured 
-									I/O-power-distribution-hardware-interface-type board. The above photo details one such project,
-									a microprocessor (imx6 variant I think??) breadboarded out to assist in writing firmware for a 
-									board that doesn't exist yet.`,
-									
-									`I wouldn't consider the featured project here more or less impressive than anything else 
-									I've done at my current job, but it was very hands-on, which I liked. Also, it gave me
-									the opportunity to really understand how bring-up is done on a brand new microprocessor.
-									Seeing how the functionality of the microprocessor is mapped out onto the pins and how 
-									the default behavior at-boot of these pins is exploited to program basic functionality 
-									of the microprocessor was very eye-opening to me, and was a great learning experience. 
-									I also had to learn how to solder for this.`]}
+							heading="Next-gen Product, Don't Worry I'm Not Leaking Any Images or Info Here" 
+							picture = "projectphotos/TidelS3.png"
+							content={[`I'm working on the next-gen flagship North American smart safe for Sesami (which has 
+									already been shown at the Sesami booth at NRF 2026). Much of my work on this new Product
+									involves participating in PCB hardware and prototype firmware implementation details, which 
+									is very exciting since I get some freedom over how I want to tackle architecting brand-new 
+									firmware. Writing lots of baremetal code is a nice change of pace from dealing with any issues 
+									that might come up in QA, production, or the eclectic and anfractuous recesses of upper management.`,
+									]}
 						/>
 					
 						<ProjectBlock 
@@ -214,7 +206,7 @@ const App = () => {
 									paired with DLSS. I tried Nvidia's frame generation stuff since I recently got a 5080, and 
 									I hate it because it causes a wierd ghosting effect for ui or stationary elements in games.
 									Predicting stereoscopic image pairs instead of next-frames would make this effect WAY worse,
-									ESPECIALLY since it would be running on mobile hardware from 2005. I did do some PoC using 
+									ESPECIALLY since it would be running on mobile hardware from 2005. I did do some proof-of-concept using 
 									ML-generated stereoscopic 3d image pairs to see if they gave the 3d-effect, and that actually worked 
 									pretty well.`,
  									
@@ -224,7 +216,10 @@ const App = () => {
 									`Anyways, I used TVM to cross-compile the MLPerf Tiny Visual Wake Words
 									model for inference on the 3ds, with some help from a tutorial on the TVM website.
 									That's what the video's showing. I learned a lot about compiler workflows and cross-compilation
-									from this part of the project. `
+									from this part of the project. `,
+									
+									`-As an addendum, it's even funnier in retrospect that I tried doing this an a 3ds now DLSS 5 was showed 
+									off and it only works on 2 5090's and makes everything look terrible.`
 									]}
 						/>
 					
