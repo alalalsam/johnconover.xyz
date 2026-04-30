@@ -219,7 +219,7 @@ const App = () => {
 									from this part of the project. `,
 									
 									`-As an addendum, it's even funnier in retrospect that I tried doing this an a 3ds now DLSS 5 was showed 
-									off and it only works on 2 5090's and makes everything look terrible.`
+									off and it only works on 2 5090's.`
 									]}
 						/>
 					
